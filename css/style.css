@@ -1,0 +1,195 @@
+/*! metis/style.css v0.0.1 | MIT License | github.com/ericyork/metis */
+/*--Document--*/
+html {
+  font-size: 15px;
+}
+body {
+  font-family: 'Gentium Book', serif;
+  color: #555;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 700;
+  margin: 1rem 0 .2rem 0;
+  color: #333;
+}
+h1 {font-size: 1.8em;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1em;}
+h6 {font-size: .8em;}/*--
+} for readability--*/
+p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+a:link, a:visited {
+  color: blue;
+  transition: all .2s ease-in;
+}
+a:hover, a:active {
+  color: purple;
+}
+.gentium {
+  font-family: 'Gentium Book Basic', serif;
+}
+.work {
+  font-family: 'Work Sans', sans-serif;
+}
+.type {
+  width: 90%;
+  margin: 0 auto;
+}
+/*--Document Media Queries --*/
+@media screen and (min-width: 576px) {
+  html {font-size: 16px;}
+  .type {width: 79%;}
+}
+@media screen and (min-width: 768px) {
+  html {font-size: 17px;}
+  .type {width: 68%;}
+}
+@media screen and (min-width: 992px) {
+  html {font-size: 18px;}
+  .type {width: 57%;}
+}
+@media screen and (min-width: 1200px) {
+  html {font-size: 19px;}
+  .type {width: 46%;}
+}
+/*--Navigation Styles --*/
+#main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  background: #DDD;
+  position: fixed;
+  width: 100%;
+}
+#main-nav a {
+  padding: .7em .5em;
+  font-size: 80%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*--Nav Media Queries --*/
+@media screen and (min-width: 768px) {
+  #main-nav a {font-size: 85%;}
+}
+@media screen and (min-width: 992px) {
+  #main-nav a {font-size: 90%;}
+}
+@media screen and (min-width: 1200px) {
+  #main-nav a {font-size: 95%;}
+}
+/*-- Nav Pagination --*/
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 2em 0;
+}
+.pagination a {
+  background: #DDD;
+  padding: .5em .5em .4em .5em;
+  font-family: 'work sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1;
+  transition: all .2s ease-in;
+  text-decoration: none;
+}
+.pagination a:link, .pagination a:visited {
+  color: blue;
+}
+.pagination a:hover, .pagination a:active {
+  background: #CCC;
+  color: purple;
+}
+.icon {
+  width: 25px;
+  height: 16px;
+  vertical-align: top;
+}
+a:link #next, a:link #back,
+a:visited #next, a:visited #back {
+  transition: all .2s ease-in;
+  fill: blue;
+}
+a:hover #next, a:hover #back,
+a:active #next, a:active #back  {
+  fill: purple;
+}
+footer {
+  background: #DDD;
+  text-align: center;
+  padding: .7em 0;
+}
+/*-- Splash Section--*/
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1em;
+}
+.lockup {
+  margin: 5em auto 1.5em auto;
+  text-align: center;
+  font-size: 105%;
+}
+.lockup h1 {
+  font-family: 'work sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.horiz {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+}
+.horiz hr {
+  border: none;
+  background-color: #DDD;
+  color: #DDD;
+  height: 2px;
+  overflow-x: hidden;
+}
+.lockup p {
+  font-style: italic;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.reverse {
+  background-color: #DDD;
+  border-radius: 5px;
+  margin: .5em auto 0 auto;
+  width: 90%;
+}
+.reverse p {
+  font-size: 80%;
+  padding: 3px .5em 2px .5em;
+}
+@media screen and (min-width: 576px) {
+  .lockup {font-size: 135%; margin-top: 3em;}
+  .reverse p {font-size: 80%;}
+}
+@media screen and (min-width: 768px) {
+  .lockup {font-size: 150%;}
+  .reverse p {font-size: 80%;}
+}
+@media screen and (min-width: 992px) {
+  .lockup {font-size: 165%;}
+  .reverse p {font-size: 80%;}
+}
+@media screen and (min-width: 1200px) {
+  .lockup {font-size: 180%;}
+  .reverse p {font-size: 80%;}
+}
