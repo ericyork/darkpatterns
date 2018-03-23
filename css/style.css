@@ -77,6 +77,9 @@ a:hover, a:active {
   text-transform: uppercase;
   text-decoration: none;
 }
+.trigram {
+  display: none;
+}
 /*--Nav Media Queries --*/
 @media screen and (min-width: 768px) {
   #main-nav a {font-size: 85%;}
