@@ -5,13 +5,17 @@ html {
 }
 body {
   font-family: 'Gentium Book', serif;
-  color: #555;
+  color: #BBD2C5;
+}
+body {
+  background: #BBD2C5;  /* fallback*/
+  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* old Chrome, Safari */
+  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* all modern */
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
   margin: 1rem 0 .2rem 0;
-  color: #333;
 }
 h1 {font-size: 1.8em;}
 h2 {font-size: 1.6em;}
@@ -46,18 +50,22 @@ a:hover, a:active {
 @media screen and (min-width: 576px) {
   html {font-size: 17px;}
   .type {width: 79%;}
+  .wavelength svg {transform: scale(.7);}
 }
 @media screen and (min-width: 768px) {
   html {font-size: 18px;}
   .type {width: 68%;}
+  .wavelength svg {transform: scale(.8);}
 }
 @media screen and (min-width: 992px) {
   html {font-size: 19px;}
   .type {width: 57%;}
+  .wavelength svg {transform: scale(.9);}
 }
 @media screen and (min-width: 1200px) {
   html {font-size: 20px;}
   .type {width: 46%;}
+  .wavelength svg {transform: scale(1);}
 }
 /*--Main Navigation Styles --*/
 .topnav {
@@ -65,9 +73,9 @@ a:hover, a:active {
   flex-direction: column;
   align-items: center;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   margin-bottom: 1em;
-  background: white;
+  background: linear-gradient(to bottom, rgba(187, 210, 197, 1) 85%, rgba(187, 210, 197, 0)); /* all modern */
   position: fixed;
   width: 100%;
 }
@@ -80,26 +88,27 @@ a:hover, a:active {
   text-decoration: none;
   position: relative;
   top: 4px;
-  transition: top .2s ease-in-out;
+  transition: all .2s ease-in-out;
   animation: bob .3s ease-in-out 2 alternate;
 }
 @keyframes bob {
   to{top:-4px;}
 }
-.topnav a:nth-child(2) {animation-delay: .1s;}
-.topnav a:nth-child(3) {animation-delay: .2s;}
-.topnav a:nth-child(4) {animation-delay: .3s;}
-.topnav a:nth-child(5) {animation-delay: .4s;}
-.topnav a:nth-child(6) {animation-delay: .5s;}
-.topnav a:nth-child(7) {animation-delay: .6s;} /*--
+.topnav a:nth-child(1) {animation-delay: .3s;}
+.topnav a:nth-child(2) {animation-delay: .4s;}
+.topnav a:nth-child(3) {animation-delay: .5s;}
+.topnav a:nth-child(4) {animation-delay: .6s;}
+.topnav a:nth-child(5) {animation-delay: .7s;}
+.topnav a:nth-child(6) {animation-delay: .8s;}
+.topnav a:nth-child(7) {animation-delay: .9s;} /*--
 } for readability --*/
 .topnav a:link, .topnav a:visited {
-  color: blue;
   background: transparent;
+  color: #536976;
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
-  color: purple;
+  color: #292E49;
 }
 .topnav a:first-child:hover {
   top: 4px;
@@ -118,10 +127,10 @@ a:hover, a:active {
   transform: rotate(360deg);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
-  fill: blue;
+  fill: #536976;
 }
 .topnav a:hover svg #metis, .topnav a:active svg #metis {
-  fill: purple;
+  fill: #292E49;
 }
 .trigram {
   display: none;
@@ -148,6 +157,41 @@ a:hover, a:active {
 }
 @media screen and (min-width: 768px) {
   .topnav {display: flex; flex-direction: row; justify-content: space-around;}
+}
+/*-- Wave Animation --*/
+.wavelength {
+  position: relative;
+  top: 3em;
+  margin-left: -350px;
+  z-index: -1;
+}
+.wavelength svg {
+  transform: scale(.5);
+}
+/*-- .wavelength Media Queries --*/
+@media screen and (min-width: 576px) {
+  .wavelength {margin-left:-250px;}
+  .wavelength svg {transform: scale(.5);}
+}
+@media screen and (min-width: 768px) {
+  .wavelength {margin-left:-100px;}
+  .wavelength svg {transform: scale(.6);}
+}
+@media screen and (min-width: 992px) {
+  .wavelength {margin-left:0px;}
+  .wavelength svg {transform: scale(.8);}
+}
+@media screen and (min-width: 1200px) {
+  .wavelength {margin-left:100px;}
+  .wavelength svg {transform: scale(1);}
+}
+.wave {
+  stroke-dasharray: 1440;
+  stroke-dashoffset: 0;
+  animation: dash 1.2s ease-in-out;
+}
+@keyframes dash {
+  from {stroke-dashoffset: 1440;}
 }
 /*-- Nav Pagination --*/
 .pagination {
@@ -207,6 +251,7 @@ footer {
   font-size: 105%;
 }
 .lockup h1 {
+  color: #292E49;
   font-family: 'work sans', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -221,18 +266,19 @@ footer {
 }
 .horiz hr {
   border: none;
-  background-color: #DDD;
-  color: #DDD;
+  background-color: #536976;
+  color: #536976;
   height: 2px;
   overflow-x: hidden;
 }
 .lockup p {
+  color: #536976;
   font-style: italic;
   margin: 0 auto;
   padding: 0 auto;
 }
 .reverse {
-  background-color: #DDD;
+  background-color: #BBD2C5;
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
