@@ -90,6 +90,12 @@ a:hover, a:active {
 .logo {
   vertical-align:middle;
 }
+.topnav a svg {
+  transition: transform .3s ease-in-out;
+}
+.topnav a:hover svg {
+  transform: rotate(360deg);
+}
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
   fill: blue;
 }
@@ -130,9 +136,9 @@ a:hover, a:active {
   margin: 0 0 2em 0;
 }
 .pagination a {
-  background: #DDD;
+  background: aliceblue;
   padding: .5em .5em .4em .5em;
-  border: 2px solid #CCC;
+  border: 1px solid lightskyblue;
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 700;
@@ -146,7 +152,7 @@ a:hover, a:active {
   color: blue;
 }
 .pagination a:hover, .pagination a:active {
-  background: #CCC;
+  background: lightcyan;
   color: purple;
 }
 .icon {
@@ -176,7 +182,7 @@ footer {
   padding: 0 1em;
 }
 .lockup {
-  margin: 5em auto 1.5em auto;
+  margin: 3em auto 1.5em auto;
   text-align: center;
   font-size: 105%;
 }
@@ -216,7 +222,7 @@ footer {
   padding: 3px .5em 2px .5em;
 }
 @media screen and (min-width: 576px) {
-  .lockup {font-size: 135%; margin-top: 3em;}
+  .lockup {font-size: 135%;}
   .reverse p {font-size: 80%;}
 }
 @media screen and (min-width: 768px) {
