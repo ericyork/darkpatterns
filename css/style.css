@@ -98,7 +98,6 @@ a:hover, a:active {
 }
 .trigram {
   display: none;
-  transition: none;
 }
 /*--Nav Media Queries --*/
 @media screen and (min-width: 768px) {
