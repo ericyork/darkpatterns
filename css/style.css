@@ -33,7 +33,7 @@ a:hover, a:active {
   color: purple;
 }
 .gentium {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'Gentium Book', serif;
 }
 .work {
   font-family: 'Work Sans', sans-serif;
@@ -96,6 +96,7 @@ a:hover, a:active {
 .pagination a {
   background: #DDD;
   padding: .5em .5em .4em .5em;
+  border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
