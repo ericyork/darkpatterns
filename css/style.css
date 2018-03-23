@@ -98,6 +98,7 @@ a:hover, a:active {
 }
 .trigram {
   display: none;
+  transition: none;
 }
 /*--Nav Media Queries --*/
 @media screen and (min-width: 768px) {
@@ -113,10 +114,12 @@ a:hover, a:active {
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
   .topnav a.trigram {display:inherit;position:absolute;top:0;right:3%;font-size:200%;line-height:.1;}
-  .logo {vertical-align:text-top;}
+  .logo {display: none;}
 }
 @media screen and (max-width: 767px) {
   .topnav.responsive a {display:inherit;}
+  .topnav.responsive a.trigram {visibility:hidden;transition:none;}
+  .topnav.responsive a.trigram:after {content:'\000D7';visibility:visible;text-indent: -.5em;}
 }
 @media screen and (min-width: 768px) {
   .topnav {display: flex; flex-direction: row; justify-content: space-around;}
