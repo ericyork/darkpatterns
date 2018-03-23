@@ -63,6 +63,7 @@ a:hover, a:active {
 .topnav {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 1em;
   background: #DDD;
   position: fixed;
@@ -77,11 +78,11 @@ a:hover, a:active {
   text-decoration: none;
   transition: all .2s ease-in;
 }
-.topnav a:link, #main-nav a:visited {
+.topnav a:link, .topnav a:visited {
   color: blue;
   background: transparent;
 }
-.topnav a:hover, #main-nav a:active {
+.topnav a:hover, .topnav a:active {
   color: purple;
   background: #CCC;
 }
@@ -110,11 +111,12 @@ a:hover, a:active {
 }
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 700px) {
-  .topnav a:not(:first-child){display: none;}
-  .topnav a.trigram {display: flex;}
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit;position: absolute;top:0;right:3%;font-size: 200%;line-height: .1;}
 }
 @media screen and (max-width: 700px) {
-  .topnav.responsive a{display:flex;flex-direction:row;justify-content:space-around;}
+  .topnav.responsive a {display:inherit;}
+  .topnav. a {display:inherit;}
 }
 @media screen and (min-width: 700px) {
   .topnav {display: flex; flex-direction: row; justify-content: space-around;}
