@@ -1,7 +1,7 @@
 /*! metis/style.css v0.0.1 | MIT License | github.com/ericyork/metis */
 /*--Document--*/
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 body {
   font-family: 'Gentium Book', serif;
@@ -44,19 +44,19 @@ a:hover, a:active {
 }
 /*--Document Media Queries --*/
 @media screen and (min-width: 576px) {
-  html {font-size: 16px;}
+  html {font-size: 17px;}
   .type {width: 79%;}
 }
 @media screen and (min-width: 768px) {
-  html {font-size: 17px;}
+  html {font-size: 18px;}
   .type {width: 68%;}
 }
 @media screen and (min-width: 992px) {
-  html {font-size: 18px;}
+  html {font-size: 19px;}
   .type {width: 57%;}
 }
 @media screen and (min-width: 1200px) {
-  html {font-size: 19px;}
+  html {font-size: 20px;}
   .type {width: 46%;}
 }
 /*--Navigation Styles --*/
