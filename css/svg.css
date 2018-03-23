@@ -1,0 +1,7 @@
+/*-- All .SVG Styles Here --
+This document is referenced at the top of the .svg file called by the <object> --*/
+
+/*-- Logo Styles --*/
+#main-nav a object g {
+  fill: blue;
+}
