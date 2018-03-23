@@ -60,16 +60,16 @@ a:hover, a:active {
   .type {width: 46%;}
 }
 /*--Navigation Styles --*/
-#main-nav {
+.topnav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1em;
   background: #DDD;
   position: fixed;
   width: 100%;
 }
-#main-nav a {
+.topnav a {
   padding: .7em .5em;
   font-size: 95%;
   font-family: 'Work Sans', sans-serif;
@@ -78,11 +78,11 @@ a:hover, a:active {
   text-decoration: none;
   transition: all .2s ease-in;
 }
-#main-nav a:link, #main-nav a:visited {
+.topnav a:link, .topnav a:visited {
   color: blue;
   background: transparent;
 }
-#main-nav a:hover, #main-nav a:active {
+.topnav a:hover, .topnav a:active {
   color: purple;
   background: #CCC;
 }
@@ -90,10 +90,10 @@ a:hover, a:active {
 .logo {
   vertical-align: top;
 }
-#main-nav a:link svg #metis, #main-nav a:visited svg #metis {
+.topnav a:link svg #metis, .topnav a:visited svg #metis {
   fill: blue;
 }
-#main-nav a:hover svg #metis, #main-nav a:active svg #metis {
+.topnav a:hover svg #metis, .topnav a:active svg #metis {
   fill: purple;
 }
 .trigram {
@@ -101,17 +101,25 @@ a:hover, a:active {
 }
 /*--Nav Media Queries --*/
 @media screen and (min-width: 768px) {
-  #main-nav a {font-size: 85%;}
+  .topnav a {font-size: 85%;}
 }
 @media screen and (min-width: 992px) {
-  #main-nav a {font-size: 90%;}
+  .topnav a {font-size: 90%;}
 }
 @media screen and (min-width: 1200px) {
-  #main-nav a {font-size: 95%;}
+  .topnav a {font-size: 95%;}
+}
+/*-- Mobile Nav Queries --*/
+@media screen and (max-width: 700px) {
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit;position: absolute;top:0;right:3%;font-size: 200%;line-height: .1;}
 }
 @media screen and (max-width: 700px) {
-  .main-nav a:not(:first-child){display: none;}
-  .main-nav a.trigram {display: flex;}
+  .topnav.responsive a {display:inherit;}
+  .topnav. a {display:inherit;}
+}
+@media screen and (min-width: 700px) {
+  .topnav {display: flex; flex-direction: row; justify-content: space-around;}
 }
 /*-- Nav Pagination --*/
 .pagination {
