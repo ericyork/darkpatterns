@@ -59,36 +59,57 @@ a:hover, a:active {
   html {font-size: 20px;}
   .type {width: 46%;}
 }
-/*--Navigation Styles --*/
+/*--Main Navigation Styles --*/
 .topnav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
   margin-bottom: 1em;
-  background: #DDD;
+  background: white;
   position: fixed;
   width: 100%;
 }
 .topnav a {
-  padding: .7em .5em;
+  padding: .4em .5em .6em .5em;
   font-size: 95%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all .2s ease-in;
+  position: relative;
+  top: 4px;
+  transition: top .2s ease-in-out;
+  animation: bob .3s ease-in-out 2 alternate;
 }
+@keyframes bob {
+  to{top:-4px;}
+}
+.topnav a:nth-child(2) {animation-delay: .1s;}
+.topnav a:nth-child(3) {animation-delay: .2s;}
+.topnav a:nth-child(4) {animation-delay: .3s;}
+.topnav a:nth-child(5) {animation-delay: .4s;}
+.topnav a:nth-child(6) {animation-delay: .5s;}
+.topnav a:nth-child(7) {animation-delay: .6s;} /*--
+} for readability --*/
 .topnav a:link, .topnav a:visited {
   color: blue;
   background: transparent;
 }
 .topnav a:hover, .topnav a:active {
+  top: -2px;
   color: purple;
-  background: #CCC;
+}
+.topnav a:first-child:hover {
+  top: 4px;
 }
 /*-- Nav Logo --*/
 .logo {
   vertical-align:middle;
+}
+.topnav a:first-child {
+  padding: 0 .4em;
 }
 .topnav a svg {
   transition: transform .3s ease-in-out;
