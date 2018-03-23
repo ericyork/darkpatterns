@@ -112,12 +112,11 @@ a:hover, a:active {
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
-  .topnav a.trigram {display: inherit;position: absolute;top:0;right:3%;font-size: 200%;line-height: .1;}
+  .topnav a.trigram {display:inherit;position:absolute;top:0;right:3%;font-size:200%;line-height:.1;}
   .logo {vertical-align:text-top;}
 }
 @media screen and (max-width: 767px) {
   .topnav.responsive a {display:inherit;}
-  .topnav. a {display:inherit;}
 }
 @media screen and (min-width: 768px) {
   .topnav {display: flex; flex-direction: row; justify-content: space-around;}
