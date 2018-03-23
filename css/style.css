@@ -96,6 +96,7 @@ a:hover, a:active {
 .pagination a {
   background: #DDD;
   padding: .5em .5em .4em .5em;
+  border: 2px solid #CCC;
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 700;
