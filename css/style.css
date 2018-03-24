@@ -164,6 +164,7 @@ a:hover, a:active {
   top: 3em;
   margin-left: -350px;
   z-index: -1;
+  overflow: hidden;
 }
 .wavelength svg {
   transform: scale(.5);
@@ -234,9 +235,9 @@ a:active #next, a:active #back  {
   fill: purple;
 }
 footer {
-  background: #DDD;
+  background: transparent;
   text-align: center;
-  padding: .7em 0;
+  padding: .7em 1em;
 }
 /*-- Splash Section--*/
 .splash {
