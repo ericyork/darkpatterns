@@ -1,13 +1,18 @@
 /*! metis/style.css v0.0.1 | MIT License | github.com/ericyork/metis */
 /*-- Variables --*/
 :root {
-  --page-bg: #FFF;
-  --foot-bg: #555;
-  --foot-text: #FFF;
-  --body-color: #555;
-  --main-link: #777;
-  --hover-link: #333;
-  --hr-color: #777
+  /*--Colors--*/
+  --drklapis: #111227;
+  --lapis: #25274D;
+  --aqua: #29648A;
+  --offwhite: #D1D1D1;
+  --cerulean: #2E9CCA;
+  --brtwhite: #F1F1F1;
+  --plum: #6a6c84;
+  --yellow: #ccb028;
+  /*--Other--*/
+  --tr-std: all .2s ease-in;
+  --tr-bob: all .2s ease-in-out;
 }
 /*--Document--*/
 html {
@@ -15,19 +20,19 @@ html {
 }
 body {
   font-family: 'Gentium Book', serif;
-  color: var(--body-color);
+  color: var(--offwhite);
 }
 body {
-  background: var(--page-bg);
-  /*-- gradient background styles
-  background: #BBD2C5;
-  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);
-  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); --*/
+  background: var(--lapis);
+  /*-- gradient background styles --*/
+  background: -webkit-linear-gradient(to top, #111227, #25274D);
+  background: linear-gradient(to top, #111227, #25274D);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
   margin: 1rem 0 .2rem 0;
+  color: var(--cerulean);
 }
 h1 {font-size: 1.8em;}
 h2 {font-size: 1.6em;}
@@ -42,11 +47,11 @@ p {
   margin-bottom: 1em;
 }
 a:link, a:visited {
-  color: var(--main-link);
-  transition: all .2s ease-in;
+  color: var(--offwhite);
+  transition: var(--tr-std);
 }
 a:hover, a:active {
-  color: var(--hover-link);
+  color: var(--brtwhite);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
@@ -87,12 +92,12 @@ a:hover, a:active {
   padding-top: 4px;
   padding-bottom: 10px;
   margin-bottom: 1em;
-  background: var(--page-bg);
+  background: var(--lapis);
   position: fixed;
   width: 100%;
 }
 .topnav a {
-  padding: .4em .5em .6em .5em;
+  padding: .5em .5em .6em .5em;
   font-size: 95%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
@@ -100,7 +105,7 @@ a:hover, a:active {
   text-decoration: none;
   position: relative;
   top: 4px;
-  transition: all .2s ease-in-out;
+  transition: var(--tr-bob);
   animation: bob .3s ease-in-out 2 alternate;
 }
 @keyframes bob {
@@ -116,11 +121,11 @@ a:hover, a:active {
 } for readability --*/
 .topnav a:link, .topnav a:visited {
   background: transparent;
-  color: var(--main-link);
+  color: var(--plum);
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
-  color: var(--hover-link);
+  color: var(--cerulean);
 }
 .topnav a:first-child:hover {
   top: 4px;
@@ -139,10 +144,10 @@ a:hover, a:active {
   transform: rotate(360deg);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
-  fill: #536976;
+  fill: var(--plum);
 }
 .topnav a:hover svg #metis, .topnav a:active svg #metis {
-  fill: #292E49;
+  fill: var(--cerulean);
 }
 .trigram {
   display: none;
@@ -160,7 +165,7 @@ a:hover, a:active {
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
-  .topnav a.trigram {display:inherit;position:absolute;right:3%;font-size:200%;}
+  .topnav a.trigram {display:inherit;position:absolute;right:3%;font-size:200%;padding:.2em .3em .2em .3em;background:var(--lapis);transition:var(--tr-bob);}
 }
 @media screen and (max-width: 767px) {
   .topnav.responsive a {display:inherit;}
@@ -199,6 +204,7 @@ a:hover, a:active {
   .wavelength svg {transform: scale(1);}
 }
 .wave {
+  stroke: var(--plum);
   stroke-dasharray: 1440;
   stroke-dashoffset: 0;
   animation: dash 1.2s ease-in-out;
@@ -213,24 +219,24 @@ a:hover, a:active {
   margin: 0 0 2em 0;
 }
 .pagination a {
-  background: aliceblue;
+  background: var(--lapis);
   padding: .5em .5em .4em .5em;
-  border: 1px solid var(--body-color);
+  border: 1px solid var(--plum);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 1;
-  transition: all .2s ease-in;
+  transition: var(--tr-std);
   text-decoration: none;
 }
 .pagination a:link, .pagination a:visited {
-  color: var(--main-link);
+  color: var(--plum);
 }
 .pagination a:hover, .pagination a:active {
-  background: lightcyan;
-  color: var(--hover-link);
+  background: var(--plum);
+  color: var(--offwhite);
 }
 .icon {
   width: 25px;
@@ -240,15 +246,15 @@ a:hover, a:active {
 a:link #next, a:link #back,
 a:visited #next, a:visited #back {
   transition: all .2s ease-in;
-  fill: var(--main-link);
+  fill: var(--plum);
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--hover-link);
+  fill: var(--offwhite);
 }
 footer {
-  color: var(--foot-text);
-  background: var(--foot-bg);
+  color: var(--offwhite);
+  background: var(--drklapis);
   text-align: center;
   padding: .7em 1em;
 }
@@ -265,7 +271,7 @@ footer {
   font-size: 105%;
 }
 .lockup h1 {
-  color: var(--body-color);
+  color: var(--cerulean);
   font-family: 'work sans', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -280,27 +286,28 @@ footer {
 }
 .horiz hr {
   border: none;
-  background-color: var(--hr-color);
-  color: var(--hr-color);
+  background-color: var(--plum);
+  color: var(--plum);
   height: 2px;
   overflow-x: hidden;
 }
 .lockup p {
-  color: var(--body-color);
+  color: var(--plum);
   font-style: italic;
   margin: 0 auto;
   padding: 0 auto;
 }
 .reverse {
-  background: var(--body-color);
+  background: var(--plum);
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
+  padding: 9px .5em 2px .5em;
 }
 .reverse p {
-  color: var(--page-bg);
+  color: var(--offwhite);
+  font-style: normal;
   font-size: 80%;
-  padding: 3px .5em 2px .5em;
 }
 @media screen and (min-width: 576px) {
   .lockup {font-size: 135%;}
