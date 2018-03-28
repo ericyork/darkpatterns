@@ -8,7 +8,7 @@
   --offwhite: #D1D1D1;
   --cerulean: #2E9CCA;
   --brtwhite: #F1F1F1;
-  --plum: #6a6c84;
+  --plum: #7d7e93;
   --yellow: #ccb028;
   /*--Other--*/
   --tr-std: all .2s ease-in;
@@ -39,7 +39,7 @@ h2 {font-size: 1.6em;}
 h3 {font-size: 1.4em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em;}
-h6 {font-size: .8em;}/*--
+h6 {font-size: .9em;text-transform: uppercase;}/*--
 } for readability--*/
 p {
   font-size: 1em;
@@ -100,7 +100,7 @@ a:hover, a:active {
   padding: .5em .5em .6em .5em;
   font-size: 95%;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -121,11 +121,11 @@ a:hover, a:active {
 } for readability --*/
 .topnav a:link, .topnav a:visited {
   background: transparent;
-  color: var(--offwhite);
+  color: var(--cerulean);
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
-  color: var(--cerulean);
+  color: var(--offwhite);
 }
 .topnav a.active {
   color: var(--cerulean);
@@ -207,65 +207,13 @@ a:hover, a:active {
   .wavelength svg {transform: scale(1);}
 }
 .wave {
-  stroke: var(--cerulean);
+  stroke: var(--plum);
   stroke-dasharray: 1440;
   stroke-dashoffset: 0;
   animation: dash 1.2s ease-in-out;
 }
 @keyframes dash {
   from {stroke-dashoffset: 1440;}
-}
-/*-- Nav Pagination --*/
-.pagination {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 0 2em 0;
-}
-.pagination a {
-  padding: .7em;
-  border: 1px solid var(--plum);
-  border-radius: 4px;
-  font-family: 'work sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1;
-  transition: var(--tr-std);
-  text-decoration: none;
-}
-.pagination a:link, .pagination a:visited {
-  background: transparent;
-  color: var(--plum);
-}
-.pagination a:hover, .pagination a:active {
-  background: var(--plum);
-  color: var(--offwhite);
-}
-.icon {
-  width: 25px;
-  height: 16px;
-  vertical-align: top;
-}
-a:link #next, a:link #back,
-a:visited #next, a:visited #back {
-  transition: all .2s ease-in;
-  fill: var(--plum);
-}
-a:hover #next, a:hover #back,
-a:active #next, a:active #back  {
-  fill: var(--offwhite);
-}
-footer {
-  color: var(--plum);
-  background: var(--drklapis);
-  text-align: center;
-  padding: .7em 1em;
-}
-footer a:link, footer a:visited {
-  color: var(--plum);
-}
-footer a:hover, footer a:active {
-  color: var(--offwhite);
 }
 /*-- Splash Section--*/
 .splash {
@@ -297,18 +245,17 @@ footer a:hover, footer a:active {
   border: none;
   background-color: var(--plum);
   color: var(--plum);
-  height: 2px;
+  height: 1px;
   overflow-x: hidden;
 }
 .lockup p {
-  color: var(--plum);
+  color: var(--cerulean);
   font-style: italic;
   margin: 0 auto;
   padding: 0 auto;
 }
 .reverse {
-  background: var(--cerulean);
-  border: 2px solid var(--drklapis);
+  background: var(--plum);
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
@@ -334,4 +281,57 @@ footer a:hover, footer a:active {
 @media screen and (min-width: 1200px) {
   .lockup {font-size: 180%;}
   .reverse p {font-size: 80%;}
+}
+/*-- Nav Pagination --*/
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 2em 0;
+}
+.pagination a {
+  padding: .8em;
+  border: 1px solid var(--plum);
+  border-radius: 4px;
+  font-family: 'work sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1;
+  transition: var(--tr-std);
+  text-decoration: none;
+}
+.pagination a:link, .pagination a:visited {
+  background: transparent;
+  color: var(--plum);
+}
+.pagination a:hover, .pagination a:active {
+  background: var(--plum);
+  color: var(--offwhite);
+}
+.icon {
+  width: 25px;
+  height: 16px;
+  vertical-align: top;
+}
+a:link #next, a:link #back,
+a:visited #next, a:visited #back {
+  transition: all .2s ease-in;
+  fill: var(--plum);
+}
+a:hover #next, a:hover #back,
+a:active #next, a:active #back  {
+  fill: var(--offwhite);
+}
+footer {
+  color: var(--plum);
+  border-top: 1px solid var(--plum);
+  background: var(--drklapis);
+  text-align: center;
+  padding: 1.3em 1em 1em 1em;
+}
+footer a:link, footer a:visited {
+  color: var(--plum);
+}
+footer a:hover, footer a:active {
+  color: var(--offwhite);
 }
