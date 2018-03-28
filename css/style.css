@@ -222,7 +222,7 @@ a:hover, a:active {
   margin: 0 0 2em 0;
 }
 .pagination a {
-  padding: .5em .5em .4em .5em;
+  padding: .7em;
   border: 1px solid var(--plum);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
