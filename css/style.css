@@ -16,7 +16,7 @@
 }
 /*--Document--*/
 html {
-  font-size: 16px;
+  font-size: 17px;
 }
 body {
   font-family: 'Gentium Book', serif;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
   margin: 1rem 0 .2rem 0;
-  color: var(--cerulean);
+  color: var(--plum);
 }
 h1 {font-size: 1.8em;}
 h2 {font-size: 1.6em;}
@@ -47,11 +47,11 @@ p {
   margin-bottom: 1em;
 }
 a:link, a:visited {
-  color: var(--offwhite);
+  color: var(--cerulean);
   transition: var(--tr-std);
 }
 a:hover, a:active {
-  color: var(--brtwhite);
+  color: var(--plum);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
@@ -65,22 +65,22 @@ a:hover, a:active {
 }
 /*--Document Media Queries --*/
 @media screen and (min-width: 576px) {
-  html {font-size: 17px;}
+  html {font-size: 18px;}
   .type {width: 79%;}
   .wavelength svg {transform: scale(.7);}
 }
 @media screen and (min-width: 768px) {
-  html {font-size: 18px;}
+  html {font-size: 19px;}
   .type {width: 68%;}
   .wavelength svg {transform: scale(.8);}
 }
 @media screen and (min-width: 992px) {
-  html {font-size: 19px;}
+  html {font-size: 20px;}
   .type {width: 57%;}
   .wavelength svg {transform: scale(.9);}
 }
 @media screen and (min-width: 1200px) {
-  html {font-size: 20px;}
+  html {font-size: 21px;}
   .type {width: 46%;}
   .wavelength svg {transform: scale(1);}
 }
@@ -121,10 +121,13 @@ a:hover, a:active {
 } for readability --*/
 .topnav a:link, .topnav a:visited {
   background: transparent;
-  color: var(--plum);
+  color: var(--offwhite);
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
+  color: var(--cerulean);
+}
+.topnav a.active {
   color: var(--cerulean);
 }
 .topnav a:first-child:hover {
@@ -144,9 +147,9 @@ a:hover, a:active {
   transform: rotate(360deg);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
-  fill: var(--plum);
+  fill: var(--offwhite);
 }
-.topnav a:hover svg #metis, .topnav a:active svg #metis {
+.topnav a:hover svg #metis, .topnav a:active svg #metis, .topnav a.active svg #metis {
   fill: var(--cerulean);
 }
 .trigram {
@@ -204,7 +207,7 @@ a:hover, a:active {
   .wavelength svg {transform: scale(1);}
 }
 .wave {
-  stroke: var(--plum);
+  stroke: var(--cerulean);
   stroke-dasharray: 1440;
   stroke-dashoffset: 0;
   animation: dash 1.2s ease-in-out;
@@ -219,7 +222,6 @@ a:hover, a:active {
   margin: 0 0 2em 0;
 }
 .pagination a {
-  background: var(--lapis);
   padding: .5em .5em .4em .5em;
   border: 1px solid var(--plum);
   border-radius: 4px;
@@ -232,6 +234,7 @@ a:hover, a:active {
   text-decoration: none;
 }
 .pagination a:link, .pagination a:visited {
+  background: transparent;
   color: var(--plum);
 }
 .pagination a:hover, .pagination a:active {
@@ -253,10 +256,16 @@ a:active #next, a:active #back  {
   fill: var(--offwhite);
 }
 footer {
-  color: var(--offwhite);
+  color: var(--plum);
   background: var(--drklapis);
   text-align: center;
   padding: .7em 1em;
+}
+footer a:link, footer a:visited {
+  color: var(--plum);
+}
+footer a:hover, footer a:active {
+  color: var(--offwhite);
 }
 /*-- Splash Section--*/
 .splash {
@@ -298,7 +307,8 @@ footer {
   padding: 0 auto;
 }
 .reverse {
-  background: var(--plum);
+  background: var(--cerulean);
+  border: 2px solid var(--drklapis);
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
