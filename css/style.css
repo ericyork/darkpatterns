@@ -1,16 +1,28 @@
 /*! metis/style.css v0.0.1 | MIT License | github.com/ericyork/metis */
+/*-- Variables --*/
+:root {
+  --page-bg: #FFF;
+  --foot-bg: #555;
+  --foot-text: #FFF;
+  --body-color: #555;
+  --main-link: #777;
+  --hover-link: #333;
+  --hr-color: #777
+}
 /*--Document--*/
 html {
   font-size: 16px;
 }
 body {
   font-family: 'Gentium Book', serif;
-  color: #D6E4DC;
+  color: var(--body-color);
 }
 body {
-  background: #BBD2C5;  /* fallback*/
-  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* old Chrome, Safari */
-  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* all modern */
+  background: var(--page-bg);
+  /*-- gradient background styles
+  background: #BBD2C5;
+  background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);
+  background: linear-gradient(to top, #292E49, #536976, #BBD2C5); --*/
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
@@ -30,11 +42,11 @@ p {
   margin-bottom: 1em;
 }
 a:link, a:visited {
-  color: blue;
+  color: var(--main-link);
   transition: all .2s ease-in;
 }
 a:hover, a:active {
-  color: purple;
+  color: var(--hover-link);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
@@ -75,7 +87,7 @@ a:hover, a:active {
   padding-top: 4px;
   padding-bottom: 10px;
   margin-bottom: 1em;
-  background: rgba(187,210,197,0.85);
+  background: var(--page-bg);
   position: fixed;
   width: 100%;
 }
@@ -104,11 +116,11 @@ a:hover, a:active {
 } for readability --*/
 .topnav a:link, .topnav a:visited {
   background: transparent;
-  color: #536976;
+  color: var(--main-link);
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
-  color: #292E49;
+  color: var(--hover-link);
 }
 .topnav a:first-child:hover {
   top: 4px;
@@ -203,7 +215,7 @@ a:hover, a:active {
 .pagination a {
   background: aliceblue;
   padding: .5em .5em .4em .5em;
-  border: 1px solid lightskyblue;
+  border: 1px solid var(--body-color);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 700;
@@ -214,11 +226,11 @@ a:hover, a:active {
   text-decoration: none;
 }
 .pagination a:link, .pagination a:visited {
-  color: blue;
+  color: var(--main-link);
 }
 .pagination a:hover, .pagination a:active {
   background: lightcyan;
-  color: purple;
+  color: var(--hover-link);
 }
 .icon {
   width: 25px;
@@ -228,14 +240,15 @@ a:hover, a:active {
 a:link #next, a:link #back,
 a:visited #next, a:visited #back {
   transition: all .2s ease-in;
-  fill: blue;
+  fill: var(--main-link);
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: purple;
+  fill: var(--hover-link);
 }
 footer {
-  background: transparent;
+  color: var(--foot-text);
+  background: var(--foot-bg);
   text-align: center;
   padding: .7em 1em;
 }
@@ -252,7 +265,7 @@ footer {
   font-size: 105%;
 }
 .lockup h1 {
-  color: #292E49;
+  color: var(--body-color);
   font-family: 'work sans', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -267,24 +280,25 @@ footer {
 }
 .horiz hr {
   border: none;
-  background-color: #536976;
-  color: #536976;
+  background-color: var(--hr-color);
+  color: var(--hr-color);
   height: 2px;
   overflow-x: hidden;
 }
 .lockup p {
-  color: #536976;
+  color: var(--body-color);
   font-style: italic;
   margin: 0 auto;
   padding: 0 auto;
 }
 .reverse {
-  background-color: #BBD2C5;
+  background: var(--body-color);
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
 }
 .reverse p {
+  color: var(--page-bg);
   font-size: 80%;
   padding: 3px .5em 2px .5em;
 }
