@@ -39,19 +39,22 @@ h2 {font-size: 1.6em;}
 h3 {font-size: 1.4em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em;}
-h6 {font-size: .9em;text-transform: uppercase;}/*--
+h6 {font-size: .9em; text-transform: uppercase;}/*--
 } for readability--*/
 p {
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 1em;
 }
-a:link, a:visited {
+a:link {
   color: var(--cerulean);
   transition: var(--tr-std);
 }
-a:hover, a:active {
+a:visited {
   color: var(--plum);
+}
+a:hover, a:active {
+  color: var(--aqua);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
@@ -249,13 +252,13 @@ a:hover, a:active {
   overflow-x: hidden;
 }
 .lockup p {
-  color: var(--cerulean);
+  color: var(--aqua);
   font-style: italic;
   margin: 0 auto;
   padding: 0 auto;
 }
 .reverse {
-  background: var(--plum);
+  background: var(--aqua);
   border-radius: 5px;
   margin: .5em auto 0 auto;
   width: 90%;
