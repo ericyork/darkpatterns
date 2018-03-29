@@ -211,12 +211,12 @@ a:hover, a:active {
 }
 .wave {
   stroke: var(--plum);
-  stroke-dasharray: 1440;
+  stroke-dasharray: 1440px;
   stroke-dashoffset: 0;
   animation: dash 1.2s ease-in-out;
 }
 @keyframes dash {
-  from {stroke-dashoffset: 1440;}
+  from {stroke-dashoffset: 1440px;}
 }
 /*-- Splash Section--*/
 .splash {
@@ -237,7 +237,7 @@ a:hover, a:active {
   text-transform: uppercase;
   line-height: 1;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
 }
 .horiz {
   display: grid;
@@ -255,7 +255,7 @@ a:hover, a:active {
   color: var(--aqua);
   font-style: italic;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
 }
 .reverse {
   background: var(--aqua);
