@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
   margin: 1rem 0 .2rem 0;
-  color: var(--cerulean);
+  color: var(--plum);
 }
 h1 {font-size: 1.8em;}
 h2 {font-size: 1.6em;}
@@ -615,9 +615,9 @@ a:hover, a:active {
   color: var(--cerulean);
 }
 .pagination a:hover, .pagination a:active {
-  background: var(--lapis);
+  background: transparent;
   border-color: var(--plum);
-  color: var(--plum);
+  color: var(--offwhite);
 }
 .icon {
   width: 25px;
@@ -631,7 +631,7 @@ a:visited #next, a:visited #back {
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--plum);
+  fill: var(--offwhite);
 }
 /*-- Bubbles Styles --*/
 
