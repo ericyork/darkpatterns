@@ -391,7 +391,7 @@ a:hover, a:active {
 }
 @media screen and (min-width: 1200px) {
   html {font-size: 21px;}
-  .type {width: 46%;}
+  .type {width: 47%;}
   .wavelength svg {transform: scale(1);}
 }
 /*--Main Navigation Styles --*/
