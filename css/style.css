@@ -358,10 +358,10 @@ a:link {
   transition: var(--tr-std);
 }
 a:visited {
-  color: var(--plum);
+  color: var(--aqua);
 }
 a:hover, a:active {
-  color: var(--aqua);
+  color: var(--plum);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
