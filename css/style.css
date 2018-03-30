@@ -457,10 +457,16 @@ a:hover, a:active {
   transform: rotate(360deg);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
+  fill: var(--cerulean);
+}
+.topnav a:hover svg #metis, .topnav a:active svg #metis {
   fill: var(--offwhite);
 }
-.topnav a:hover svg #metis, .topnav a:active svg #metis, .topnav a.active svg #metis {
-  fill: var(--cerulean);
+.topnav a.active {
+  color: var(--offwhite);
+}
+.topnav a.active svg #metis {
+  fill: var(--offwhite);
 }
 .trigram {
   display: none;
@@ -612,7 +618,7 @@ p.drop {
 /*-- Page Navigation --*/
 .pagination {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 2em 0 2em 0;
 }
 .pagination a {
@@ -650,8 +656,10 @@ a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
   fill: var(--offwhite);
 }
-/*-- Bubbles Styles --*/
-
+/*-- Page Styles --*/
+#histories .type {
+  margin-top: 5em;
+}
 /*-- Footer Styles --*/
 footer {
   color: var(--plum);
