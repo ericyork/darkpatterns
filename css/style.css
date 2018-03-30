@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
   margin: 1rem 0 .2rem 0;
-  color: var(--plum);
+  color: var(--cerulean);
 }
 h1 {font-size: 1.8em;}
 h2 {font-size: 1.6em;}
@@ -595,12 +595,12 @@ a:hover, a:active {
 /*-- Nav Pagination --*/
 .pagination {
   display: flex;
-  justify-content: space-around;
-  margin: 0 0 2em 0;
+  justify-content: space-between;
+  margin: 2em 0 2em 0;
 }
 .pagination a {
   padding: .8em;
-  border: 1px solid var(--plum);
+  border: 1px solid var(--cerulean);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 400;
@@ -612,11 +612,12 @@ a:hover, a:active {
 }
 .pagination a:link, .pagination a:visited {
   background: transparent;
-  color: var(--plum);
+  color: var(--cerulean);
 }
 .pagination a:hover, .pagination a:active {
-  background: var(--plum);
-  color: var(--offwhite);
+  background: var(--lapis);
+  border-color: var(--plum);
+  color: var(--plum);
 }
 .icon {
   width: 25px;
@@ -626,11 +627,11 @@ a:hover, a:active {
 a:link #next, a:link #back,
 a:visited #next, a:visited #back {
   transition: all .2s ease-in;
-  fill: var(--plum);
+  fill: var(--cerulean);
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--offwhite);
+  fill: var(--plum);
 }
 /*-- Bubbles Styles --*/
 
