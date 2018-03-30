@@ -338,7 +338,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
-  margin: 1rem 0 .2rem 0;
+  margin: 1rem 0 .5rem 0;
   color: var(--plum);
 }
 h1 {font-size: 1.8em;}
@@ -615,7 +615,7 @@ p.drop {
     margin: 0px 14px -16px 0px;
     line-height: .75;
 }
-/*-- Page Navigation --*/
+/*-- Pagination Nav Buttons --*/
 .pagination {
   display: flex;
   justify-content: space-around;
@@ -659,6 +659,17 @@ a:active #next, a:active #back  {
 /*-- Page Styles --*/
 #histories .type {
   margin-top: 5em;
+}
+.page-nav {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+.page-nav a:link, .page-nav a:visited {
+  color: var(--cerulean);
+}
+.page-nav a:hover, .page-nav a:active {
+  color: var(--plum);
 }
 /*-- Footer Styles --*/
 footer {
