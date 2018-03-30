@@ -323,10 +323,10 @@ template {
 }
 /*--Document--*/
 html {
-  font-size: 17px;
+  font-size: 18px;
 }
 body {
-  font-family: 'Gentium Book', serif;
+  font-family: 'Gentium Book Basic', serif;
   color: var(--offwhite);
 }
 body {
@@ -370,28 +370,28 @@ a:hover, a:active {
   font-family: 'Work Sans', sans-serif;
 }
 .type {
-  width: 90%;
+  width: 89%;
   margin: 0 auto;
 }
 /*--Document Media Queries --*/
 @media screen and (min-width: 576px) {
-  html {font-size: 18px;}
+  html {font-size: 19px;}
   .type {width: 79%;}
   .wavelength svg {transform: scale(.7);}
 }
 @media screen and (min-width: 768px) {
-  html {font-size: 19px;}
-  .type {width: 68%;}
+  html {font-size: 20px;}
+  .type {width: 69%;}
   .wavelength svg {transform: scale(.8);}
 }
 @media screen and (min-width: 992px) {
-  html {font-size: 20px;}
-  .type {width: 57%;}
+  html {font-size: 21px;}
+  .type {width: 59%;}
   .wavelength svg {transform: scale(.9);}
 }
 @media screen and (min-width: 1200px) {
-  html {font-size: 21px;}
-  .type {width: 47%;}
+  html {font-size: 22px;}
+  .type {width: 49%;}
   .wavelength svg {transform: scale(1);}
 }
 /*--Main Navigation Styles --*/
@@ -592,7 +592,24 @@ a:hover, a:active {
   .lockup {font-size: 180%;}
   .reverse p {font-size: 80%;}
 }
-/*-- Nav Pagination --*/
+/*-- Drop Cap Styles --*/
+p.drop {
+  margin-top: 2.5em;
+}
+.dropcap {
+    float: left;
+    font-size: 500%;
+    color: var(--cerulean);
+}
+.dropcap.t {
+    margin: 0 14px -16px 0px;
+    line-height: .75;
+}
+.dropcap.i {
+    margin: 0px 14px -16px 0px;
+    line-height: .75;
+}
+/*-- Page Navigation --*/
 .pagination {
   display: flex;
   justify-content: space-between;
