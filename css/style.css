@@ -338,7 +338,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
-  margin: 1rem 0 .25rem 0;
+  margin: 1em 0 .25em 0;
   color: var(--plum);
 }
 h1 {font-size: 1.8em;}
@@ -384,22 +384,18 @@ a:hover, a:active {
 @media screen and (min-width: 576px) {
   html {font-size: 19px;}
   .type {width: 79%;}
-  .wavelength svg {transform: scale(.7);}
 }
 @media screen and (min-width: 768px) {
   html {font-size: 20px;}
   .type {width: 69%;}
-  .wavelength svg {transform: scale(.8);}
 }
 @media screen and (min-width: 992px) {
   html {font-size: 21px;}
   .type {width: 59%;}
-  .wavelength svg {transform: scale(.9);}
 }
 @media screen and (min-width: 1200px) {
   html {font-size: 22px;}
   .type {width: 49%;}
-  .wavelength svg {transform: scale(1);}
 }
 /*--Main Navigation Styles --*/
 .topnav {
@@ -438,16 +434,16 @@ a:hover, a:active {
 } for readability --*/
 .topnav a:link, .topnav a:visited {
   background: transparent;
-  color: var(--cerulean);
+  color: var(--plum);
 }
 .topnav a:hover, .topnav a:active {
   top: -2px;
-  color: var(--offwhite);
+  color: var(--cerulean);
 }
 .topnav a.active {
   color: var(--cerulean);
 }
-.topnav a:first-child:hover {
+.topnav a:first-child:hover, .topnav a:last-child:hover  {
   top: 4px;
 }
 /*-- Nav Logo --*/
@@ -464,16 +460,16 @@ a:hover, a:active {
   transform: rotate(360deg);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
-  fill: var(--cerulean);
+  fill: var(--plum);
 }
 .topnav a:hover svg #metis, .topnav a:active svg #metis {
-  fill: var(--offwhite);
+  fill: var(--cerulean);
 }
 .topnav a.active {
-  color: var(--offwhite);
+  color: var(--cerulean);
 }
 .topnav a.active svg #metis {
-  fill: var(--offwhite);
+  fill: var(--cerulean);
 }
 .trigram {
   display: none;
@@ -494,7 +490,8 @@ a:hover, a:active {
   .topnav a.trigram {display:inherit;position:absolute;right:3%;font-size:200%;padding:.2em .3em .2em .3em;background:var(--lapis);transition:var(--tr-bob);}
 }
 @media screen and (max-width: 767px) {
-  .topnav.responsive a {display:inherit;}
+  .topnav.responsive a:first-child {margin-top:1em;}
+  .topnav.responsive a:not(:last-child) {display:inherit;padding-top:1em;}
   .topnav.responsive a.trigram {visibility:hidden;transition:none;}
   .topnav.responsive a.trigram:after {content:'\000D7';visibility:visible;text-indent: -.5em;}
 }
@@ -507,6 +504,7 @@ a:hover, a:active {
   top: 3.3em;
   z-index: -1;
   overflow: hidden;
+  margin-bottom: 1.5em;
 }
 .wave {
   stroke: var(--plum);
@@ -525,7 +523,7 @@ a:hover, a:active {
   padding: 0 1em;
 }
 .lockup {
-  margin: 3em auto .5em auto;
+  margin: 2.5em auto .5em auto;
   text-align: center;
   font-size: 105%;
 }
@@ -544,6 +542,8 @@ a:hover, a:active {
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
+  margin: 0 auto;
+  padding: 0;
 }
 .horiz {
   display: grid;
@@ -590,6 +590,25 @@ a:hover, a:active {
 @media screen and (min-width: 1200px) {
   .lockup {font-size: 180%;}
   .reverse p {font-size: 80%;}
+}
+/*-- Page Nav Styles --*/
+.page-nav {
+  display: flex;
+  justify-content: center;
+}
+.page-nav a {
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+@media screen and (max-width:555px) {
+  .page-nav a {font-size: 85%;}
+}
+.page-nav a:link, .page-nav a:visited {
+  color: var(--plum);
+}
+.page-nav a:hover, .page-nav a:active {
+  color: var(--cerulean);
+  text-decoration: underline;
 }
 /*-- Drop Cap Styles --*/
 p.drop {
@@ -649,23 +668,11 @@ a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
   fill: var(--offwhite);
 }
-/*-- Page Styles --*/
-.page-nav {
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-}
-.page-nav a:link, .page-nav a:visited {
-  color: var(--cerulean);
-}
-.page-nav a:hover, .page-nav a:active {
-  color: var(--plum);
-}
 /*-- Back-to-top Button --*/
 .to-top {
   position: fixed;
   right: 5%;
-  bottom: .5em;
+  bottom: 1em;
   display: none;
 }
 .top-button {
