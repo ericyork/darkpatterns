@@ -498,29 +498,8 @@ a:hover, a:active {
 .wavelength {
   position: relative;
   top: 3.3em;
-  margin-left: -350px;
   z-index: -1;
   overflow: hidden;
-}
-.wavelength svg {
-  transform: scale(.5);
-}
-/*-- .wavelength Media Queries --*/
-@media screen and (min-width: 576px) {
-  .wavelength {margin-left:-250px;}
-  .wavelength svg {transform: scale(.5);}
-}
-@media screen and (min-width: 768px) {
-  .wavelength {margin-left:-100px;}
-  .wavelength svg {transform: scale(.6);}
-}
-@media screen and (min-width: 992px) {
-  .wavelength {margin-left:0px;}
-  .wavelength svg {transform: scale(.8);}
-}
-@media screen and (min-width: 1200px) {
-  .wavelength {margin-left:100px;}
-  .wavelength svg {transform: scale(1);}
 }
 .wave {
   stroke: var(--plum);
