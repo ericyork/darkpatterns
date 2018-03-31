@@ -29,11 +29,11 @@
 		</div>
 		<section class="type">
 			<div class="page-nav">
-				<a href="#mythica" onclick="animateScroll(mythica, 1000, 'easeInOutQuint', 10, top, onFinish);">Mythica</a>
+				<a href="#mythica">Mythica</a>
 				&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
-				<a href="#characteristica" onclick="animateScroll(characteristica, 1000, 'easeInOutQuint', 10, top, onFinish);">Characteristica</a>
+				<a href="#characteristica">Characteristica</a>
 				&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
-				<a href="#rhetorica" onclick="animateScroll(rhetorica, 1000, 'easeInOutQuint', 10, top, onFinish);">Rhetorica</a>
+				<a href="#rhetorica">Rhetorica</a>
 			</div>
 			<div class="section" id="mythica">
 				<h1>Mētis: Mythology and Misogyny</h1>
@@ -84,11 +84,46 @@
 					</svg>
 				</a>
 			</div>
+			<div class="top-button">
+				<a class="scrollToTop" href="#mythica">&#8679;</a>
+			</div>
 		</section>
 		<footer>
 			&copy; 2018 <a href="#">Eric J. York</a>
 		</footer>
-		<script src="animatescroll.js" type="text/javascript"></script>
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+		</script>
+		<script>
+			$(document).ready(function(){
+			//Check to see if the window is top if not then display button
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 200) {
+					$('.scrollToTop').fadeIn();
+				} else {
+					$('.scrollToTop').fadeOut();
+				}
+			});
+		});
+		</script>
+		<script>
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html, body').animate({
+					  scrollTop: target.offset().top-80
+					}, 600);
+					return false;
+				  }
+				}
+			  });
+			});
+		</script>
 		<script>
 			function navToggle() {
 				var x = document.getElementById("main-nav");
