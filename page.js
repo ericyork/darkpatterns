@@ -1,16 +1,15 @@
-//* Page Scripts
-
+//* Page Scripts for Metis article
+//* Scroll to Top Button (requires jQuery and custom display styles)
 $(document).ready(function(){
-//Check to see if the window is top if not then display button
 $(window).scroll(function(){
-  if ($(this).scrollTop() > 200) {
+  if ($(this).scrollTop() > 300) {
     $('.to-top').fadeIn();
   } else {
     $('.to-top').fadeOut();
   }
 });
 });
-
+//* Animates Scrolling (requires jQuery)
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -25,7 +24,7 @@ $(function() {
   }
   });
 });
-
+//* Mobile Navigaton Toggle
 function navToggle() {
   var x = document.getElementById("main-nav");
     if (x.className === "topnav") {
