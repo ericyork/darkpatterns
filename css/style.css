@@ -650,6 +650,28 @@ a:active #next, a:active #back  {
 .page-nav a:hover, .page-nav a:active {
   color: var(--plum);
 }
+/*-- Back-to-top Button --*/
+.to-top {
+  position: fixed;
+  right: 5%;
+  bottom: .5em;
+  display: none;
+}
+.top-button {
+  font-size: 150%;
+  background-color: var(--lapis);
+  padding: .2em .3em .15em .3em;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.to-top a:link, .to-top a:visited {
+  color: var(--cerulean);
+  border: 1px solid var(--cerulean);
+}
+.to-top a:hover, .to-top a:active {
+  color: var(--plum);
+  border: 1px solid var(--plum);
+}
 /*-- Footer Styles --*/
 footer {
   color: var(--plum);
