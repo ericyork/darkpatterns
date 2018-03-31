@@ -507,7 +507,7 @@ a:hover, a:active {
 /*-- Wave Animation --*/
 .wavelength {
   position: relative;
-  top: 3.3em;
+  top: 3.1em;
   z-index: -1;
   overflow: hidden;
   margin-bottom: 1.5em;
@@ -658,9 +658,14 @@ p.drop {
 }
 .card {
   position: relative;
-  border: 2px solid var(--brtwhite);
   background: var(--brtwhite);
   border-radius: 4px;
+}
+.card:first-child {
+  background: transparent;
+}
+.card:first-child .card-text {
+  color: var(--offwhite);
 }
 .thumb {
   background-image: url('https://picsum.photos/300/200/?random');
@@ -677,12 +682,17 @@ p.drop {
 .card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=30');}
 .card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=41');}
 .card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=50');}
-.card:nth-child(7) .thumb {background-image: url('https://picsum.photos/300/200/?image=60');}
+.card:nth-child(7) .thumb {background-image: url('https://picsum.photos/300/200/?image=60');} /*--
+} extra for radability--*/
 .card-content {
   padding: 0 .5em .75em .5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card:first-child .card-content {
+  padding: .25em 0 0 0;
+  border-bottom: 1px solid var(--plum);
 }
 .card-title {
   margin: .2em 0 0 0;
