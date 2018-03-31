@@ -366,6 +366,13 @@ a:hover, a:active {
 .gentium {
   font-family: 'Gentium Book', serif;
 }
+.gentium.title {
+  font-size: 80%;
+  text-transform: lowercase;
+  font-style: italic;
+  vertical-align: middle;
+  font-weight: 400;
+}
 .work {
   font-family: 'Work Sans', sans-serif;
 }
@@ -518,7 +525,7 @@ a:hover, a:active {
   padding: 0 1em;
 }
 .lockup {
-  margin: 3em auto 1.5em auto;
+  margin: 3em auto .5em auto;
   text-align: center;
   font-size: 105%;
 }
@@ -530,6 +537,13 @@ a:hover, a:active {
   line-height: 1;
   margin: 0 auto;
   padding: 0;
+}
+.lockup h3 {
+  color: var(--cerulean);
+  font-family: 'work sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
 }
 .horiz {
   display: grid;
@@ -552,7 +566,7 @@ a:hover, a:active {
 .reverse {
   background: var(--aqua);
   border-radius: 5px;
-  margin: .5em auto 0 auto;
+  margin: .5em auto 1em auto;
   width: 90%;
   padding: 9px .5em 2px .5em;
 }
@@ -636,9 +650,6 @@ a:active #next, a:active #back  {
   fill: var(--offwhite);
 }
 /*-- Page Styles --*/
-#histories .type {
-  margin-top: 5em;
-}
 .page-nav {
   display: flex;
   justify-content: center;
