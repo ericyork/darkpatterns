@@ -375,9 +375,14 @@ a:hover, a:active {
 }
 .work {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
 .type {
   width: 89%;
+  margin: 0 auto;
+}
+.gallery {
+  width: 87%;
   margin: 0 auto;
 }
 /*--Document Media Queries --*/
@@ -407,6 +412,7 @@ a:hover, a:active {
   margin-bottom: 1em;
   background: var(--lapis);
   position: fixed;
+  z-index: 1000;
   width: 100%;
 }
 .topnav a {
@@ -617,7 +623,8 @@ p.drop {
 .dropcap {
     float: left;
     font-size: 500%;
-    color: var(--cerulean);
+    color: var(--plum);
+    font-style: italic;
 }
 .dropcap.t {
     margin: 0 14px -16px 0px;
@@ -626,6 +633,86 @@ p.drop {
 .dropcap.i {
     margin: 0px 14px -16px 0px;
     line-height: .75;
+}
+/*-- Gallery Styles --*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: .5em;
+}
+@media screen and (min-width: 556px) {
+  .container {grid-template-columns: repeat(2, 1fr);}
+  .card:first-child {grid-column: 1/ span 2;}
+}
+@media screen and (min-width: 768px) {
+  .container {grid-template-columns: repeat(3, 1fr);}
+  .card:last-child {grid-column: 2/ span 2;}
+}
+@media screen and (min-width: 992px) {
+  .container {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 1200px) {
+  .container {grid-template-columns: repeat(4, 1fr);}
+  .card:last-child {grid-column: 4/ span 1;}
+}
+.card {
+  position: relative;
+  border: 2px solid var(--brtwhite);
+  background: var(--brtwhite);
+  border-radius: 4px;
+}
+.thumb {
+  background-image: url('https://picsum.photos/300/200/?random');
+  padding-bottom: 56%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 4px 4px 0 0;
+}
+.card:first-child .thumb {
+  padding-bottom: 32%;
+}
+.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=10');}
+.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=20');}
+.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=30');}
+.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=41');}
+.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=50');}
+.card:nth-child(7) .thumb {background-image: url('https://picsum.photos/300/200/?image=60');}
+.card-content {
+  padding: 0 .5em .75em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-title {
+  margin: .2em 0 0 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: var(--plum);
+}
+.card-text {
+  font-size: .80em;
+  line-height: 1.2;
+  align-self: flex-start;
+  color: var(--lapis);
+}
+a.card-more {
+  padding: .3em .6em;
+  border: 1.5px solid var(--plum);
+  border-radius: 200px;
+  font-size: .75em;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: -.75px;
+}
+a.card-more:link, a.card-more:visited {
+  color: var(--plum);
+}
+a.card-more:hover, a.card-more:active {
+  color: var(--cerulean);
+  border-color: var(--cerulean);
 }
 /*-- Pagination Nav Buttons --*/
 .pagination {
