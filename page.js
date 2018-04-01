@@ -34,8 +34,8 @@ function navToggle() {
   }
 }
 //* Modals in Gallery
-var modal = document.getElementById('myModal');
-var btn = document.getElementById("myBtn");
+var modal = document.getElementById('darkPatterns');
+var btn = document.getElementById("darkBtn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
     modal.style.display = "block";

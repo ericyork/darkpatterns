@@ -462,7 +462,7 @@ a:hover, a:active {
   transition: transform .3s ease-in-out;
 }
 .topnav a:hover svg {
-  transform: rotate(360deg);
+  transform: scale(1.5);
 }
 .topnav a:link svg #metis, .topnav a:visited svg #metis {
   fill: var(--plum);
@@ -733,15 +733,20 @@ a.card-more:hover, a.card-more:active {
 }
 .modal-content {
    background-color: var(--offwhite);
+   color: var(--lapis);
    margin: 2% auto;
    padding: 1em;
    width: 94%;
    border-radius: 4px;
+   animation: fadein .3s ease-in-out;
+}
+@keyframes fadein {
+  from{transform:scale(.1);}
 }
 .close {
    color: var(--plum);
    float: right;
-   font-size: 200%;
+   font-size: 250%;
    font-weight: bold;
 }
 .close:hover,
@@ -769,7 +774,7 @@ a.card-more:hover, a.card-more:active {
   text-decoration: none;
 }
 .pagination a:link, .pagination a:visited {
-  background: transparent;
+  background: var(--lapis);
   color: var(--plum);
 }
 .pagination a:hover, .pagination a:active {
