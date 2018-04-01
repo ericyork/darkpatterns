@@ -493,7 +493,8 @@ a:hover, a:active {
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
-  .topnav a.trigram {display:inherit;position:absolute;right:3%;font-size:200%;padding:.2em .3em .2em .3em;background:var(--lapis);transition:var(--tr-bob);}
+  .topnav a.trigram {display:inherit;position:absolute;right:4%;font-size:200%;padding: 0 .15em .15em .1em;background:var(--lapis);border:1px solid var(--plum);border-radius:4px;transition:var(--tr-bob);}
+  .topnav a.trigram:hover {border-color: var(--cerulean);}
 }
 @media screen and (max-width: 767px) {
   .topnav.responsive a:first-child {margin-top:1em;}
@@ -529,7 +530,7 @@ a:hover, a:active {
   padding: 0 1em;
 }
 .lockup {
-  margin: 2.5em auto .5em auto;
+  margin: 1.5em auto .5em auto;
   text-align: center;
   font-size: 105%;
 }
@@ -639,7 +640,7 @@ p.drop {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: .5em;
+  grid-gap: .7em;
 }
 @media screen and (min-width: 556px) {
   .container {grid-template-columns: repeat(2, 1fr);}
@@ -648,9 +649,11 @@ p.drop {
 @media screen and (min-width: 768px) {
   .container {grid-template-columns: repeat(3, 1fr);}
   .card:last-child {grid-column: 2/ span 2;}
+  .card:last-child .thumb {padding-bottom: 32%;}
 }
 @media screen and (min-width: 992px) {
   .container {grid-template-columns: repeat(3, 1fr);}
+  .card:last-child .thumb {padding-bottom: 56%;}
 }
 @media screen and (min-width: 1200px) {
   .container {grid-template-columns: repeat(4, 1fr);}
@@ -658,14 +661,9 @@ p.drop {
 }
 .card {
   position: relative;
-  background: var(--brtwhite);
-  border-radius: 4px;
-}
-.card:first-child {
   background: transparent;
-}
-.card:first-child .card-text {
-  color: var(--offwhite);
+  border: 1px solid var(--plum);
+  border-radius: 4px;
 }
 .thumb {
   background-image: url('https://picsum.photos/300/200/?random');
@@ -685,14 +683,10 @@ p.drop {
 .card:nth-child(7) .thumb {background-image: url('https://picsum.photos/300/200/?image=60');} /*--
 } extra for radability--*/
 .card-content {
-  padding: 0 .5em .75em .5em;
+  padding: 0 .5em .7em .5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.card:first-child .card-content {
-  padding: .25em 0 0 0;
-  border-bottom: 1px solid var(--plum);
 }
 .card-title {
   margin: .2em 0 0 0;
@@ -706,7 +700,7 @@ p.drop {
   font-size: .80em;
   line-height: 1.2;
   align-self: flex-start;
-  color: var(--lapis);
+  color: var(--offwhite);
 }
 a.card-more {
   padding: .3em .6em;
@@ -780,12 +774,12 @@ a:active #next, a:active #back  {
   border-radius: 4px;
 }
 .to-top a:link, .to-top a:visited {
-  color: var(--cerulean);
-  border: 1px solid var(--cerulean);
-}
-.to-top a:hover, .to-top a:active {
   color: var(--plum);
   border: 1px solid var(--plum);
+}
+.to-top a:hover, .to-top a:active {
+  color: var(--cerulean);
+  border: 1px solid var(--cerulean);
 }
 /*-- Footer Styles --*/
 footer {
