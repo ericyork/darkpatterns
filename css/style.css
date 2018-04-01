@@ -760,6 +760,35 @@ a.card-more:hover, a.card-more:active {
    text-decoration: none;
    cursor: pointer;
 }
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+@media screen and (min-width: 556px) {
+  .modal-body {grid-template-columns: 1fr;}
+}
+@media screen and (min-width: 768px) {
+  .modal-body {grid-template-columns: 1fr;}
+}
+@media screen and (min-width: 992px) {
+  .modal-body {grid-template-columns: 5fr 7fr;}
+}
+@media screen and (min-width: 1200px) {
+  .modal-body {grid-template-columns: 5fr 7fr;}
+}
+.eg-text { /*--for visual testing --*/
+  border-right: 2px solid var(--lapis);
+}
+.eg-text p {
+  -webkit-columns: 300px 2;
+   -moz-columns: 300px 2;
+        columns: 300px 2;
+}
+.eg-text h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
 /*-- Pagination Nav Buttons --*/
 .pagination {
   display: flex;

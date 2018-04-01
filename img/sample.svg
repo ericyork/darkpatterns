@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="562px" viewBox="0 0 1000 562" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>sample</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="panel" stroke="#46C9DD">
+            <g id="sample">
+                <rect id="Rectangle-3" stroke-width="7" x="378.5" y="159.5" width="243" height="243"></rect>
+                <circle id="Oval" stroke-width="7" cx="835" cy="281" r="125"></circle>
+                <polygon id="Triangle" stroke-width="7" points="165 156 290 406 40 406"></polygon>
+                <path d="M5,1 L205,1" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M1,0 L1,200" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M1,362 L1,562" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M999,0 L999,200" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M999,362 L999,562" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M0,561 L200,561" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M800,1 L1000,1" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M800,561 L1000,561" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M400,1 L600,1" id="Line" stroke-width="10" stroke-linecap="square"></path>
+                <path d="M400,561 L600,561" id="Line" stroke-width="10" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
