@@ -493,7 +493,7 @@ a:hover, a:active {
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 767px) {
   .topnav a {display: none;}
-  .topnav a.trigram {display:inherit;position:absolute;right:4%;font-size:200%;padding: 0 .15em .15em .1em;background:var(--lapis);border:1px solid var(--plum);border-radius:4px;transition:var(--tr-bob);}
+  .topnav a.trigram {display:inherit;position:absolute;right:4%;font-size:200%;padding: .2em .15em .15em .1em;background:var(--lapis);border:1px solid var(--plum);border-radius:4px;transition:var(--tr-bob);}
   .topnav a.trigram:hover {border-color: var(--cerulean);}
 }
 @media screen and (max-width: 767px) {
