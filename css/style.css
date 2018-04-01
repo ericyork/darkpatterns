@@ -726,7 +726,7 @@ a.card-more:hover, a.card-more:active {
 }
 .pagination a {
   padding: .8em;
-  border: 1px solid var(--cerulean);
+  border: 1px solid var(--plum);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 400;
@@ -738,12 +738,12 @@ a.card-more:hover, a.card-more:active {
 }
 .pagination a:link, .pagination a:visited {
   background: transparent;
-  color: var(--cerulean);
+  color: var(--plum);
 }
 .pagination a:hover, .pagination a:active {
   background: transparent;
-  border-color: var(--plum);
-  color: var(--offwhite);
+  border-color: var(--cerulean);
+  color: var(--cerulean);
 }
 .icon {
   width: 25px;
@@ -753,11 +753,11 @@ a.card-more:hover, a.card-more:active {
 a:link #next, a:link #back,
 a:visited #next, a:visited #back {
   transition: all .2s ease-in;
-  fill: var(--cerulean);
+  fill: var(--plum);
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--offwhite);
+  fill: var(--cerulean);
 }
 /*-- Back-to-top Button --*/
 .to-top {
