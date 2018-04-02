@@ -1,5 +1,5 @@
 //* Page Scripts for Metis article
-//* Scroll to Top Button (requires jQuery and custom display styles)
+//* Scroll to Top Button (requires jQuery and display:none in style.css)
 $(document).ready(function(){
 $(window).scroll(function(){
   if ($(this).scrollTop() > 300) {
