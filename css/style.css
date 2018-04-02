@@ -449,8 +449,8 @@ a:hover, a:active {
   color: var(--plum);
 }
 .topnav a:hover, .topnav a:active {
-  top: -2px;
   color: var(--cerulean);
+  top: -2px;
 }
 .topnav a.active {
   color: var(--cerulean);
@@ -533,7 +533,7 @@ a:hover, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1em;
+  padding: 1em 1em 0 1em;
 }
 .lockup {
   margin: 1.5em auto .5em auto;
@@ -577,15 +577,12 @@ a:hover, a:active {
   margin: 0 auto;
   padding: 0;
 }
-.lockup p.gallery-sub {
+.gallery-sub {
   font-family: 'Work Sans', sans-serif;
   text-decoration: none;
   color: var(--plum);
-  font-size: 54%;
   font-style: normal;
   font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 .reverse {
   background: var(--aqua);
