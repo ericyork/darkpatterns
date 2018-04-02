@@ -467,6 +467,7 @@ a:hover, a:active {
 }
 .topnav a svg {
   transition: transform .3s ease-in-out;
+  transform: scale(1.2);
 }
 .topnav a:hover svg {
   transform: scale(1.5);
@@ -601,6 +602,7 @@ a:hover, a:active {
   .reverse p {font-size: 80%;}
 }
 @media screen and (min-width: 768px) {
+  .splash {padding-top:0;}
   .lockup {font-size: 150%;}
   .reverse p {font-size: 80%;}
 }
@@ -694,11 +696,11 @@ p.drop {
   .card:nth-child(4) .thumb {padding-bottom: 32%;}
 }
 /*-- Card Backgrounds --*/
-.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=11');}
-.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=21');}
-.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=31');}
-.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=41');}
-.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=51');} /*--
+.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=14');}
+.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=24');}
+.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=35');}
+.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
+.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=54');} /*--
 } extra for radability--*/
 .card-content {
   padding: 0 .5em .7em .5em;
