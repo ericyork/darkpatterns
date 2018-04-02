@@ -679,12 +679,11 @@ p.drop {
   .card:nth-child(4) .thumb {padding-bottom: 32%;}
 }
 /*-- Card Backgrounds --*/
-.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=10');}
-.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=20');}
-.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=30');}
+.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=11');}
+.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=21');}
+.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=31');}
 .card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=41');}
-.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=50');}
-.card:nth-child(7) .thumb {background-image: url('https://picsum.photos/300/200/?image=60');} /*--
+.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=51');} /*--
 } extra for radability--*/
 .card-content {
   padding: 0 .5em .7em .5em;
@@ -708,8 +707,7 @@ p.drop {
 }
 button.card-more {
   background: transparent;
-  padding: .3em .6em;
-  border: 1.5px solid var(--plum);
+  padding: .4em .7em;
   border-radius: 200px;
   font-size: .75em;
   text-decoration: none;
@@ -719,6 +717,7 @@ button.card-more {
 }
 button.card-more, button.card-more:visited {
   color: var(--plum);
+  border: 1.5px solid var(--plum);
 }
 button.card-more:hover, button.card-more:active {
   color: var(--cerulean);
@@ -738,13 +737,25 @@ button.card-more:hover, button.card-more:active {
    background-color: rgba(17, 18, 39, 0.85);
 }
 .modal-content {
-   background-color: var(--offwhite);
+   background-color: var(--brtwhite);
    color: var(--lapis);
-   margin: 2% auto;
+   margin: 3% auto;
    padding: 1em;
-   width: 94%;
+   width: 92%;
    border-radius: 4px;
    animation: fadein .3s ease-in-out;
+}
+.modal-head h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--cerulean);
+  margin-bottom: 0;
+}
+.modal-head p {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--plum);
+  margin-bottom: 1em;
 }
 @keyframes fadein {
   from{transform:scale(.1);}
@@ -754,6 +765,7 @@ button.card-more:hover, button.card-more:active {
    float: right;
    font-size: 250%;
    font-weight: bold;
+   transition: all .2s ease-in;
 }
 .close:hover,
 .close:focus {
@@ -765,6 +777,7 @@ button.card-more:hover, button.card-more:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
+  font-size: 85%;
 }
 @media screen and (min-width: 556px) {
   .modal-body {grid-template-columns: 1fr;}
@@ -778,17 +791,17 @@ button.card-more:hover, button.card-more:active {
 @media screen and (min-width: 1200px) {
   .modal-body {grid-template-columns: 5fr 7fr;}
 }
-.eg-text { /*--for visual testing --*/
-  border-right: 2px solid var(--lapis);
-}
 .eg-text p {
-  -webkit-columns: 300px 2;
-   -moz-columns: 300px 2;
-        columns: 300px 2;
+  -webkit-columns: 280px 2;
+   -moz-columns: 280px 2;
+        columns: 280px 2;
 }
 .eg-text h3 {
   margin-top: 0;
   padding-top: 0;
+}
+.modal-body img {
+  margin-bottom: 1.5em;
 }
 /*-- Pagination Nav Buttons --*/
 .pagination {
