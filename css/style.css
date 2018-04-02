@@ -760,10 +760,18 @@ a.card-more:hover, a.card-more:active {
    text-decoration: none;
    cursor: pointer;
 }
+.modal-head h2 {
+  font-size: 150%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  color: var(--cerulean);
+  text-transform: uppercase;
+}
 .modal-body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
+  font-size: 85%;
 }
 @media screen and (min-width: 556px) {
   .modal-body {grid-template-columns: 1fr;}
@@ -774,16 +782,10 @@ a.card-more:hover, a.card-more:active {
 @media screen and (min-width: 992px) {
   .modal-body {grid-template-columns: 5fr 7fr;}
 }
-@media screen and (min-width: 1200px) {
-  .modal-body {grid-template-columns: 5fr 7fr;}
-}
-.eg-text { /*--for visual testing --*/
-  border-right: 2px solid var(--lapis);
-}
 .eg-text p {
-  -webkit-columns: 300px 2;
-   -moz-columns: 300px 2;
-        columns: 300px 2;
+  -webkit-columns: 280px 2;
+   -moz-columns: 280px 2;
+        columns: 280px 2;
 }
 .eg-text h3 {
   margin-top: 0;
