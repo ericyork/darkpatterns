@@ -334,6 +334,12 @@ body {
   background: -webkit-linear-gradient(to top, #111227, #25274D);
   background: linear-gradient(to top, #111227, #25274D);
 }
+.type p::selection {
+  background: var(--plum);
+}
+.type p::-moz-selection {
+  background: var(--plum);
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gentium Book Basic', serif;
   font-weight: 700;
@@ -351,6 +357,14 @@ p {
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 1em;
+}
+code {
+  background: var(--plum);
+  color: var(--lapis);
+  padding: 2px 3px 1px 3px;
+  border-radius: 2px;
+  font-size: 80%;
+  vertical-align: middle;
 }
 hr {
   border: none;
