@@ -33,18 +33,3 @@ function navToggle() {
     x.className = "topnav";
   }
 }
-//* Modals in Gallery
-var modal = document.getElementById('darkPatterns');
-var btn = document.getElementById("darkBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-span.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
