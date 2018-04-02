@@ -706,7 +706,8 @@ p.drop {
   align-self: flex-start;
   color: var(--offwhite);
 }
-a.card-more {
+button.card-more {
+  background: transparent;
   padding: .3em .6em;
   border: 1.5px solid var(--plum);
   border-radius: 200px;
@@ -716,10 +717,10 @@ a.card-more {
   letter-spacing: -.75px;
   cursor: pointer;
 }
-a.card-more, a.card-more:visited {
+button.card-more, button.card-more:visited {
   color: var(--plum);
 }
-a.card-more:hover, a.card-more:active {
+button.card-more:hover, button.card-more:active {
   color: var(--cerulean);
   border-color: var(--cerulean);
 }

@@ -33,18 +33,14 @@ function navToggle() {
     x.className = "topnav";
   }
 }
-//* Modals in Gallery
-var modal = document.getElementById('darkPatterns');
-var btn = document.getElementById("darkBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-span.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+//* New Modal Scripts
+$(".button").on("click", function() {
+  var modal = $(this).data("modal");
+  $(modal).show();
+});
+$(".modal").on("click", function(e) {
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){
+    $(this).closest(".modal").hide();
+  }
+});
