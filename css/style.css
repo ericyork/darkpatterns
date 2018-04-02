@@ -706,22 +706,54 @@ p.drop {
   align-self: flex-start;
   color: var(--offwhite);
 }
-a.card-more {
-  padding: .3em .6em;
+button.card-more {
+  padding: .4em .7em;
   border: 1.5px solid var(--plum);
   border-radius: 200px;
+  background: transparent;
   font-size: .75em;
   text-decoration: none;
   font-family: 'Work Sans', sans-serif;
   letter-spacing: -.75px;
   cursor: pointer;
+  transition: all .2s ease-in;
 }
-a.card-more, a.card-more:visited {
+button.card-more, a.card-more:visited {
   color: var(--plum);
 }
-a.card-more:hover, a.card-more:active {
+button.card-more:hover, a.card-more:active {
   color: var(--cerulean);
   border-color: var(--cerulean);
+}
+/*-- Modal Styles--*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8888;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 1em;
+    width: 87%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 250%;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: var(--cerulean);
+    text-decoration: none;
+    cursor: pointer;
 }
 /*-- Pagination Nav Buttons --*/
 .pagination {
