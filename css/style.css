@@ -881,6 +881,7 @@ a:active #next, a:active #back  {
   right: 5%;
   bottom: 1em;
   display: none;
+  z-index: 999
 }
 .top-button {
   font-size: 150%;
@@ -897,6 +898,52 @@ a:active #next, a:active #back  {
   color: var(--cerulean);
   border: 1px solid var(--cerulean);
 }
+.sm-bubbles{
+  position: absolute;
+  left: 5%;
+  top: 100%;
+}
+.sm-round {
+  position: absolute;
+  left: 6%;
+  top: 170%;
+}
+.round-fish {
+  position: absolute;
+  left: 5%;
+  top: 180%;
+}
+.bubbles {
+  position: absolute;
+  right: 5%;
+  top: 100%;
+}
+.sm-fish {
+  position: absolute;
+  right: 7%;
+  top: 170%;
+}
+.xs-fish {
+  position: absolute;
+  right: 5%;
+  top: 180%;
+}
+.fish {
+  position: absolute;
+  right: 5%;
+  top: 187%;
+}
+.octopus {
+  position: absolute;
+  right: 1%;
+  top: 245%;
+}
+.angler {
+  position: absolute;
+  left: 1%;
+  top: 285%;
+}
+
 /*-- Footer Styles --*/
 footer {
   color: var(--plum);
