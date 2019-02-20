@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="570px" viewBox="0 0 1024 570" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>gestalt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="gestalt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M95.9839678,456.173395 C78.3668111,448.74833 66,431.318377 66,411 C66,383.938047 87.9380473,362 115,362 C142.061953,362 164,383.938047 164,411 C164,431.003575 152.013429,448.207537 134.831076,455.821097 L115.5,419 L95.9839678,456.173395 Z M84.4459214,478.150626 L63,519 L98.6363251,519 C95.6778466,543.231644 75.0307155,562 50,562 C22.9380473,562 1,540.061953 1,513 C1,485.938047 22.9380473,464 50,464 C63.428368,464 75.5951138,469.401647 84.4459225,478.150625 Z M131.363675,519 L168,519 L146.216623,477.507853 C155.007291,469.137843 166.903642,464 180,464 C207.061953,464 229,485.938047 229,513 C229,540.061953 207.061953,562 180,562 C154.969284,562 134.322153,543.231644 131.363675,519 Z" id="Combined-Shape" fill="#F1F1F1"></path>
+        <path d="M809.5,137.5 L979.5,137.5" id="Line-2" stroke="#F1F1F1" stroke-width="3" stroke-linecap="square"></path>
+        <g id="proximity" transform="translate(3.000000, 61.000000)" stroke="#F1F1F1" stroke-width="3">
+            <circle id="Oval-4" cx="18" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="82" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="146" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="210" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="18" cy="62" r="18"></circle>
+            <circle id="Oval-4" cx="82" cy="62" r="18"></circle>
+            <circle id="Oval-4" cx="146" cy="62" r="18"></circle>
+            <circle id="Oval-4" cx="210" cy="62" r="18"></circle>
+            <circle id="Oval-4" cx="18" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="82" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="146" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="210" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="18" cy="150" r="18"></circle>
+            <circle id="Oval-4" cx="82" cy="150" r="18"></circle>
+            <circle id="Oval-4" cx="146" cy="150" r="18"></circle>
+            <circle id="Oval-4" cx="210" cy="150" r="18"></circle>
+        </g>
+        <text id="Proximity" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="38.820625" y="43">Proximity</tspan>
+        </text>
+        <text id="Similarity" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="447.606917" y="43">Similarity</tspan>
+        </text>
+        <text id="Continuity" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="811.830917" y="43">Continuity</tspan>
+        </text>
+        <text id="Closure" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="54.9920417" y="344">Closure</tspan>
+        </text>
+        <text id="Area" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="487.945167" y="344">Area</tspan>
+        </text>
+        <text id="Symmetry" font-family="WorkSans-Bold, Work Sans" font-size="32" font-weight="bold" letter-spacing="-0.08458333" fill="#D1D1D1">
+            <tspan x="812.786333" y="344">Symmetry</tspan>
+        </text>
+        <g id="Group" transform="translate(440.000000, 61.000000)" stroke="#F1F1F1" stroke-width="3">
+            <circle id="Oval-4" cx="18" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="60" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="106" cy="18" r="18"></circle>
+            <circle id="Oval-4" cx="150" cy="18" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="18" cy="62" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="60" cy="62" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="106" cy="62" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="150" cy="62" r="18"></circle>
+            <circle id="Oval-4" cx="18" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="60" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="106" cy="106" r="18"></circle>
+            <circle id="Oval-4" cx="150" cy="106" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="18" cy="150" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="60" cy="150" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="106" cy="150" r="18"></circle>
+            <circle id="Oval-4" fill="#7D7E93" cx="150" cy="150" r="18"></circle>
+        </g>
+        <path d="M893.5,65.5 L893.5,221.5" id="Line" stroke="#F1F1F1" stroke-width="3" stroke-linecap="square"></path>
+        <rect id="Rectangle-6" stroke="#F1F1F1" stroke-width="3" transform="translate(892.000000, 424.000000) rotate(45.000000) translate(-892.000000, -424.000000) " x="851.5" y="383.5" width="81" height="81"></rect>
+        <rect id="Rectangle-6" stroke="#F1F1F1" stroke-width="3" transform="translate(892.000000, 478.000000) rotate(45.000000) translate(-892.000000, -478.000000) " x="851.5" y="437.5" width="81" height="81"></rect>
+        <rect id="Rectangle" stroke="#F1F1F1" stroke-width="3" x="413.5" y="363.5" width="211" height="181"></rect>
+        <rect id="Rectangle" stroke="#F1F1F1" stroke-width="3" x="528.5" y="449.5" width="55" height="55"></rect>
+    </g>
+</svg>

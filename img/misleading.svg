@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="570px" viewBox="0 0 1024 570" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #7D7E93;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>misleading</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="misleading" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Original" transform="translate(18.000000, 15.000000)">
+            <g id="grid" transform="translate(46.000000, 86.000000)" stroke="#D1D1D1">
+                <path d="M0.272321301,432.151695 C0.272321301,432.151695 141.938988,432.151695 425.272321,432.151695" id="Path-7" stroke-width="3"></path>
+                <path d="M0.272321301,346.151695 C0.272321301,346.151695 141.938988,346.151695 425.272321,346.151695" id="Path-7"></path>
+                <path d="M0.272321301,260.151695 C0.272321301,260.151695 141.938988,260.151695 425.272321,260.151695" id="Path-7"></path>
+                <path d="M0.272321301,174.151695 C0.272321301,174.151695 141.938988,174.151695 425.272321,174.151695" id="Path-7"></path>
+                <path d="M0.272321301,88.1516951 C0.272321301,88.1516951 141.938988,88.1516951 425.272321,88.1516951" id="Path-7"></path>
+                <path d="M0.272321301,1.15169508 C0.272321301,1.15169508 141.938988,1.15169508 425.272321,1.15169508" id="Path-7" stroke-width="3"></path>
+                <path d="M195,448.5 L195,433" id="Line" stroke-width="3" stroke-linecap="square"></path>
+                <path d="M379,448.5 L379,433" id="Line" stroke-width="3" stroke-linecap="square"></path>
+            </g>
+            <polygon id="Path-2" fill="#CCB028" opacity="0.850000024" points="55.9583323 88.3617021 464.823608 88.3617021 464.823608 397.809294 445.058076 385.417981 427.332464 376.869135 408.019002 387.433594 389.467554 423.929688 371.008805 443.242188 352.402133 407.085938 333.710652 312.708984 314.565543 327.138672 296.126516 340.587891 277.440953 324.71875 260.39097 304.169922 240.568817 302.148438 221.814222 285.771484 202.828869 340.587891 184.545654 361.167969 165.554384 376.869135 147.202139 383.099609 128.084641 407.085938 110.763909 432.451172 90.7805718 427.804688 72.3494346 435.648438 53.6835938 464.326172 53.6835938 88.3617021"></polygon>
+            <polyline id="Path-3" stroke="#F1F1F1" stroke-width="4" points="55.4409707 464.266922 73.5341938 435.369922 91.6000971 427.270814 110.979839 432.387085 129.574755 407.06154 147.787192 384.597134 166.546027 375.683396 184.507618 361.330515 202.672866 341.156013 222.179273 286.021976 240.630139 303.437169 259.162964 303.437169 277.745462 325.697918 296.861939 341.156013 314.547847 326.697918 333.14028 312.038871 351.258339 407.06154 370.186061 443.849024 388.080594 424.004844 406.481787 386.86062 425.528723 375.683396 444.076449 384.597134 462.817899 397.924276"></polyline>
+            <g id="ovals" transform="translate(51.000000, 284.000000)" fill="#2E9CCA" stroke="#F1F1F1" stroke-width="2">
+                <circle id="Oval" cx="4.5" cy="179.5" r="4.5"></circle>
+                <circle id="Oval" cx="22.5" cy="150.5" r="4.5"></circle>
+                <circle id="Oval" cx="41.5" cy="142.5" r="4.5"></circle>
+                <circle id="Oval" cx="59.5" cy="148.5" r="4.5"></circle>
+                <circle id="Oval" cx="79.5" cy="121.5" r="4.5"></circle>
+                <circle id="Oval" cx="97.5" cy="100.5" r="4.5"></circle>
+                <circle id="Oval" cx="116.5" cy="90.5" r="4.5"></circle>
+                <circle id="Oval" cx="134.5" cy="76.5" r="4.5"></circle>
+                <circle id="Oval" cx="151.5" cy="56.5" r="4.5"></circle>
+                <circle id="Oval" cx="171.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" cx="189.5" cy="19.5" r="4.5"></circle>
+                <circle id="Oval" cx="208.5" cy="21.5" r="4.5"></circle>
+                <circle id="Oval" cx="226.5" cy="40.5" r="4.5"></circle>
+                <circle id="Oval" cx="245.5" cy="55.5" r="4.5"></circle>
+                <circle id="Oval" cx="263.5" cy="42.5" r="4.5"></circle>
+                <circle id="Oval" cx="281.5" cy="29.5" r="4.5"></circle>
+                <circle id="Oval" cx="300.5" cy="122.5" r="4.5"></circle>
+                <circle id="Oval" cx="319.5" cy="158.5" r="4.5"></circle>
+                <circle id="Oval" cx="337.5" cy="138.5" r="4.5"></circle>
+                <circle id="Oval" cx="355.5" cy="103.5" r="4.5"></circle>
+                <circle id="Oval" cx="374.5" cy="91.5" r="4.5"></circle>
+                <circle id="Oval" cx="393.5" cy="100.5" r="4.5"></circle>
+                <circle id="Oval" cx="411.5" cy="113.5" r="4.5"></circle>
+            </g>
+            <g id="plot" transform="translate(297.000000, 206.000000)">
+                <path d="M36,102.5 L36,87" id="Line" stroke="#F1F1F1" stroke-width="2" stroke-linecap="square"></path>
+                <text id="2005-Florida-enacted" font-family="WorkSans-Bold, Work Sans" font-size="20" font-weight="bold" line-spacing="21" letter-spacing="-0.0634375066" fill="#F1F1F1">
+                    <tspan x="0" y="19">2005</tspan>
+                    <tspan x="55.94625" y="20.3999634" font-family="WorkSans-Medium, Work Sans" font-weight="400"></tspan>
+                    <tspan x="0.34" y="39.8599243" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">Florida enacted </tspan>
+                    <tspan x="0.34" y="60.8599243" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">its ‘Stand Your </tspan>
+                    <tspan x="0.34" y="81.8599243" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">Ground’ law</tspan>
+                </text>
+            </g>
+            <text id="Number-of-murders-co" font-family="WorkSans-Medium, Work Sans" font-size="20" font-weight="400" line-spacing="21" letter-spacing="-0.0634375066" fill="#F1F1F1">
+                <tspan x="3" y="63">Number of murders commited using firearms</tspan>
+            </text>
+            <g id="x-axis" transform="translate(117.000000, 520.000000)" fill="#F1F1F1" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                <text id="1990s">
+                    <tspan x="0" y="16">1990s</tspan>
+                </text>
+                <text id="2000s">
+                    <tspan x="193" y="16">2000s</tspan>
+                </text>
+                <text id="2010s">
+                    <tspan x="315" y="16">2010s</tspan>
+                </text>
+            </g>
+            <g id="y-axis" transform="translate(1.000000, 76.000000)" fill="#F1F1F1">
+                <text id="1,000" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="449">1,000</tspan>
+                </text>
+                <text id="800" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="363">  800</tspan>
+                </text>
+                <text id="873" font-family="WorkSans-SemiBold, Work Sans" font-size="22" font-weight="500" letter-spacing="-0.300000012">
+                    <tspan x="48" y="412">87</tspan>
+                    <tspan x="73.404" y="412">3</tspan>
+                </text>
+                <text id="721" font-family="WorkSans-SemiBold, Work Sans" font-size="22" font-weight="500" letter-spacing="-0.300000012">
+                    <tspan x="443" y="346">72</tspan>
+                    <tspan x="468.492" y="346">1</tspan>
+                </text>
+                <text id="600" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="276">  600</tspan>
+                </text>
+                <text id="400" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="190">  400</tspan>
+                </text>
+                <text id="200" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="104">  200</tspan>
+                </text>
+                <text id="0" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                    <tspan x="0" y="16">     0</tspan>
+                </text>
+            </g>
+            <text id="Original-Published-Version" font-family="GentiumBookBasic-Bold, Gentium Book Basic" font-size="32" font-weight="bold" letter-spacing="-0.0845833346" fill="#D1D1D1">
+                <tspan x="0" y="28">Original Published Version</tspan>
+            </text>
+        </g>
+        <g id="Revised" transform="translate(519.000000, 15.000000)">
+            <g id="grid" transform="translate(48.000000, 86.000000)" stroke="#D1D1D1">
+                <path d="M0.272321301,432.151695 C0.272321301,432.151695 141.938988,432.151695 425.272321,432.151695" id="Path-7" stroke-width="3"></path>
+                <path d="M0.272321301,346.151695 C0.272321301,346.151695 141.938988,346.151695 425.272321,346.151695" id="Path-7"></path>
+                <path d="M0.272321301,260.151695 C0.272321301,260.151695 141.938988,260.151695 425.272321,260.151695" id="Path-7"></path>
+                <path d="M0.272321301,174.151695 C0.272321301,174.151695 141.938988,174.151695 425.272321,174.151695" id="Path-7"></path>
+                <path d="M0.272321301,88.1516951 C0.272321301,88.1516951 141.938988,88.1516951 425.272321,88.1516951" id="Path-7"></path>
+                <path d="M0.272321301,1.15169508 C0.272321301,1.15169508 141.938988,1.15169508 425.272321,1.15169508" id="Path-7" stroke-width="3"></path>
+                <path d="M195,448.5 L195,433" id="Line" stroke-width="3" stroke-linecap="square"></path>
+                <path d="M379,448.5 L379,433" id="Line" stroke-width="3" stroke-linecap="square"></path>
+            </g>
+            <polygon id="Path-2" fill="#CCB028" opacity="0.850000024" transform="translate(261.253601, 328.343937) scale(1, -1) translate(-261.253601, -328.343937) " points="57.9583323 140.361702 466.823608 140.361702 466.823608 449.809294 447.058076 437.417981 429.332464 428.869135 410.019002 439.433594 391.467554 475.929688 373.008805 495.242188 354.402133 459.085938 335.710652 364.708984 316.565543 379.138672 298.126516 392.587891 279.440953 376.71875 262.39097 356.169922 242.568817 354.148438 223.814222 337.771484 204.828869 392.587891 186.545654 413.167969 167.554384 428.869135 149.202139 435.099609 130.084641 459.085938 112.763909 484.451172 92.7805718 479.804688 74.3494346 487.648438 55.6835938 516.326172 55.6835938 140.361702"></polygon>
+            <g id="ovals" transform="translate(260.000000, 227.000000) scale(1, -1) translate(-260.000000, -227.000000) translate(52.000000, 135.000000)" stroke="#F1F1F1">
+                <polyline id="Path-3" stroke-width="4" points="4.4409707 180.266922 22.5341938 151.369922 40.6000971 143.270814 59.979839 148.387085 78.5747548 123.06154 96.787192 100.597134 115.546027 91.683396 133.507618 77.3305153 151.672866 57.1560127 171.179273 2.02197556 189.630139 19.4371685 208.162964 19.4371685 226.745462 41.6979178 245.861939 57.1560127 263.547847 42.6979178 282.14028 28.0388707 300.258339 123.06154 319.186061 159.849024 337.080594 140.004844 355.481787 102.86062 374.528723 91.683396 393.076449 100.597134 411.817899 113.924276"></polyline>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="4.5" cy="179.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="23.5" cy="151.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="41.5" cy="143.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="59.5" cy="148.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="79.5" cy="121.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="97.5" cy="100.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="116.5" cy="90.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="134.5" cy="76.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="151.5" cy="56.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="171.5" cy="4.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="189.5" cy="19.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="208.5" cy="21.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="226.5" cy="40.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="245.5" cy="55.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="263.5" cy="42.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="281.5" cy="29.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="300.5" cy="122.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="319.5" cy="158.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="337.5" cy="138.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="355.5" cy="103.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="374.5" cy="91.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="393.5" cy="100.5" r="4.5"></circle>
+                <circle id="Oval" stroke-width="2" fill="#2E9CCA" cx="411.5" cy="113.5" r="4.5"></circle>
+            </g>
+            <g id="plot" transform="translate(299.000000, 295.000000)">
+                <path d="M35,15.5 L35.5,0" id="Line" stroke="#F1F1F1" stroke-width="2" stroke-linecap="square"></path>
+                <text id="2005-Florida-enacted" font-family="WorkSans-Bold, Work Sans" font-size="20" font-weight="bold" line-spacing="21" letter-spacing="-0.0634375066" fill="#F1F1F1">
+                    <tspan x="0" y="40">2005</tspan>
+                    <tspan x="55.94625" y="41.3999634" font-family="WorkSans-Medium, Work Sans" font-weight="400"></tspan>
+                    <tspan x="0.34" y="60.8599243" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">Florida enacted </tspan>
+                    <tspan x="0.34" y="81.8599243" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">its ‘Stand Your </tspan>
+                    <tspan x="0.34" y="102.859924" font-family="WorkSans-Medium, Work Sans" font-weight="400" letter-spacing="-0.3">Ground’ law</tspan>
+                </text>
+            </g>
+            <text id="Number-of-murders-co" font-family="WorkSans-Medium, Work Sans" font-size="20" font-weight="400" line-spacing="21" letter-spacing="-0.0634375066" fill="#F1F1F1">
+                <tspan x="5" y="63">Number of murders commited using firearms</tspan>
+            </text>
+            <g id="x-axis" transform="translate(119.000000, 520.000000)" fill="#F1F1F1" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                <text id="1990s">
+                    <tspan x="0" y="16">1990s</tspan>
+                </text>
+                <text id="2000s">
+                    <tspan x="193" y="16">2000s</tspan>
+                </text>
+                <text id="2010s">
+                    <tspan x="315" y="16">2010s</tspan>
+                </text>
+            </g>
+            <text id="873" font-family="WorkSans-SemiBold, Work Sans" font-size="22" font-weight="500" letter-spacing="-0.300000012" fill="#F1F1F1">
+                <tspan x="51" y="129">87</tspan>
+                <tspan x="76.404" y="129">3</tspan>
+            </text>
+            <text id="721" font-family="WorkSans-SemiBold, Work Sans" font-size="22" font-weight="500" letter-spacing="-0.300000012" fill="#F1F1F1">
+                <tspan x="448" y="196">72</tspan>
+                <tspan x="473.492" y="196">1</tspan>
+            </text>
+            <g id="y-axis" transform="translate(0.000000, 76.000000)" fill="#F1F1F1" font-family="WorkSans-Regular, Work Sans" font-size="17" font-weight="normal" letter-spacing="-0.06343751">
+                <text id="0">
+                    <tspan x="3" y="449">     0</tspan>
+                </text>
+                <text id="200">
+                    <tspan x="3" y="363">  200</tspan>
+                </text>
+                <text id="400">
+                    <tspan x="3" y="276">  400</tspan>
+                </text>
+                <text id="600">
+                    <tspan x="3" y="190">  600</tspan>
+                </text>
+                <text id="800">
+                    <tspan x="3" y="104">  800</tspan>
+                </text>
+                <text id="1,000">
+                    <tspan x="0" y="16">1,000</tspan>
+                </text>
+            </g>
+            <text id="Original-Published-Version" font-family="GentiumBookBasic-Bold, Gentium Book Basic" font-size="32" font-weight="bold" letter-spacing="-0.0845833346" fill="#D1D1D1">
+                <tspan x="2" y="28">‘Proper’ Version</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

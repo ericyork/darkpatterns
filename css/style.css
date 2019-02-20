@@ -316,7 +316,7 @@ template {
   --brtwhite: #F1F1F1;
   --plum: #7d7e93;
   --yellow: #ccb028;
-  /*--Other--*/
+  /*--Animations--*/
   --tr-std: all .2s ease-in;
   --tr-bob: all .2s ease-in-out;
 }
@@ -513,7 +513,7 @@ a:hover, a:active {
 }
 /*-- Mobile Nav Queries --*/
 @media screen and (max-width: 767px) {
-  .topnav a {display: none;}
+  .topnav a, .topnav span {display: none;}
   .topnav a.trigram {display:inherit;position:absolute;right:4%;font-size:200%;padding: .2em .15em .15em .1em;background:var(--lapis);border-radius:4px;transition:var(--tr-bob);}
   .topnav a.trigram:hover {border-color: var(--cerulean);}
 }
