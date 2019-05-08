@@ -354,8 +354,8 @@ h5 {font-size: 1em;}
 h6 {font-size: .9em; text-transform: uppercase;}/*--
 } for readability--*/
 p {
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: .95em;
+  line-height: 1.45;
   margin-bottom: 1em;
 }
 code {
@@ -655,7 +655,6 @@ p.drop {
     float: left;
     font-size: 500%;
     color: var(--plum);
-    font-style: italic;
 }
 .dropcap.t {
     margin: 0 14px -16px 0px;
