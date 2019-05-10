@@ -389,8 +389,6 @@ p {
   }
 }
 blockquote {
-  font-style: italic;
-  color: var(--plum);
   background-image: url('../img/quote2.svg');
   background-repeat: no-repeat;
   padding-top: .6em;
@@ -904,7 +902,6 @@ button.card-more:hover, button.card-more:active {
   color: var(--cerulean);
 }
 .pagination a:hover, .pagination a:active {
-  background: var(--lapis);
   border-color: var(--plum);
   color: var(--plum);
 }
@@ -993,6 +990,8 @@ a:active #next, a:active #back  {
 
 /*-- Footer Styles --*/
 footer {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
   color: var(--plum);
   border-top: 1px solid var(--plum);
   background: var(--drklapis);
