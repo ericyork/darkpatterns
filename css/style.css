@@ -945,47 +945,47 @@ a:active #next, a:active #back  {
 .sm-bubbles{
   position: absolute;
   left: 5%;
-  top: 100%;
+  top: 200%;
 }
 .sm-round {
   position: absolute;
   left: 6%;
-  top: 170%;
+  top: 370%;
 }
 .round-fish {
   position: absolute;
   left: 5%;
-  top: 180%;
+  top: 480%;
 }
 .bubbles {
   position: absolute;
   right: 5%;
-  top: 100%;
+  top: 200%;
 }
 .sm-fish {
   position: absolute;
   right: 7%;
-  top: 170%;
+  top: 370%;
 }
 .xs-fish {
   position: absolute;
   right: 5%;
-  top: 180%;
+  top: 480%;
 }
 .fish {
   position: absolute;
   right: 5%;
-  top: 187%;
+  top: 387%;
 }
 .octopus {
   position: absolute;
   right: 1%;
-  top: 245%;
+  top: 445%;
 }
 .angler {
   position: absolute;
   left: 1%;
-  top: 285%;
+  top: 385%;
 }
 
 /*-- Footer Styles --*/
