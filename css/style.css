@@ -368,9 +368,11 @@ p {
 }
 .text-list {
   list-style: disc;
-  padding-left: 1em;
+  padding-left: 1.25em;
 }
 .epigraph {
+  color: var(--plum);
+  font-style: italic;
   border-top: 1px dashed var(--plum);
   border-bottom: 1px dashed var(--plum);
   padding-top: 1em;
@@ -402,6 +404,7 @@ cite {
   margin-bottom: 1em;
   display: block;
   color: var(--plum);
+  font-size: .9em;
   font-style: normal;
 }
 code {
@@ -923,7 +926,7 @@ a:active #next, a:active #back  {
 .to-top {
   position: fixed;
   right: 5%;
-  bottom: 1em;
+  bottom: .75em;
   display: none;
   z-index: 999
 }
@@ -996,7 +999,7 @@ footer {
   border-top: 1px solid var(--plum);
   background: var(--drklapis);
   text-align: center;
-  padding: 1.3em 1em 1em 1em;
+  padding: 1.6em 1em 1.3em 1em;
 }
 footer a:link, footer a:visited {
   color: var(--plum);
