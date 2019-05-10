@@ -320,6 +320,14 @@ template {
   --tr-std: all .2s ease-in;
   --tr-bob: all .2s ease-in-out;
 }
+::-moz-selection {
+  background: var(--plum);
+  color: var(--drklapis);
+}
+::selection {
+  background: var(--plum);
+  color: var(--drklapis);
+}
 /*--Document--*/
 html {
   font-size: 18px;
@@ -354,9 +362,45 @@ h5 {font-size: 1em;}
 h6 {font-size: .9em; text-transform: uppercase;}/*--
 } for readability--*/
 p {
-  font-size: .95em;
+  font-size: 1em;
   line-height: 1.45;
   margin-bottom: 1em;
+}
+.epigraph {
+  border-top: 1px dashed var(--plum);
+  border-bottom: 1px dashed var(--plum);
+  padding-top: 1em;
+  margin-bottom: 2em;
+  width: 100%;
+  transform: translateX(0%);
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 992px) {
+  .epigraph {
+    grid-template-columns: 1fr 1fr;
+    width: 150%;
+    transform: translateX(-20%);
+  }
+}
+blockquote {
+  font-size: 1.1em;
+  font-style: italic;
+  line-height: 1.45em;
+  color: var(--plum);
+  background-image: url('../img/quote2.svg');
+  background-repeat: no-repeat;
+  padding-top: .6em;
+  padding-left: 1em;
+}
+cite {
+  text-align: right;
+  margin-bottom: 1em;
+  display: block;
+  color: var(--plum);
+  font-size: 1rem;
+  font-style: normal;
 }
 code {
   background: var(--plum);
