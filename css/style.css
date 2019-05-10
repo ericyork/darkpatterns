@@ -366,6 +366,10 @@ p {
   line-height: 1.45;
   margin-bottom: 1em;
 }
+.text-list {
+  list-style: disc;
+  padding-left: 1em;
+}
 .epigraph {
   border-top: 1px dashed var(--plum);
   border-bottom: 1px dashed var(--plum);
@@ -385,21 +389,21 @@ p {
   }
 }
 blockquote {
-  font-size: 1.1em;
   font-style: italic;
-  line-height: 1.45em;
   color: var(--plum);
   background-image: url('../img/quote2.svg');
   background-repeat: no-repeat;
   padding-top: .6em;
   padding-left: 1em;
+  font-size: 1em;
+  line-height: 1.4;
 }
 cite {
   text-align: right;
+  margin-top: .5em;
   margin-bottom: 1em;
   display: block;
   color: var(--plum);
-  font-size: 1rem;
   font-style: normal;
 }
 code {
@@ -422,7 +426,7 @@ a:link {
   transition: var(--tr-std);
 }
 a:visited {
-  color: var(--aqua);
+  color: var(--cerulean);
 }
 a:hover, a:active {
   color: var(--plum);
@@ -885,7 +889,7 @@ button.card-more:hover, button.card-more:active {
 }
 .pagination a {
   padding: .8em;
-  border: 1px solid var(--plum);
+  border: 1px solid var(--cerulean);
   border-radius: 4px;
   font-family: 'work sans', sans-serif;
   font-weight: 400;
@@ -896,13 +900,13 @@ button.card-more:hover, button.card-more:active {
   text-decoration: none;
 }
 .pagination a:link, .pagination a:visited {
-  background: var(--lapis);
-  color: var(--plum);
+  background: transparent;
+  color: var(--cerulean);
 }
 .pagination a:hover, .pagination a:active {
-  background: transparent;
-  border-color: var(--cerulean);
-  color: var(--cerulean);
+  background: var(--lapis);
+  border-color: var(--plum);
+  color: var(--plum);
 }
 .icon {
   width: 25px;
@@ -912,11 +916,11 @@ button.card-more:hover, button.card-more:active {
 a:link #next, a:link #back,
 a:visited #next, a:visited #back {
   transition: all .2s ease-in;
-  fill: var(--plum);
+  fill: var(--cerulean);
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--cerulean);
+  fill: var(--plum);
 }
 /*-- Back-to-top Button --*/
 .to-top {
@@ -928,18 +932,18 @@ a:active #next, a:active #back  {
 }
 .top-button {
   font-size: 150%;
-  background-color: var(--lapis);
+  background-color: transparent;
   padding: .2em .3em .15em .3em;
   text-decoration: none;
   border-radius: 4px;
 }
 .to-top a:link, .to-top a:visited {
-  color: var(--plum);
-  border: 1px solid var(--plum);
-}
-.to-top a:hover, .to-top a:active {
   color: var(--cerulean);
   border: 1px solid var(--cerulean);
+}
+.to-top a:hover, .to-top a:active {
+  color: var(--plum);
+  border: 1px solid var(--plum);
 }
 .sm-bubbles{
   position: absolute;
