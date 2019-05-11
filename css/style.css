@@ -371,6 +371,13 @@ p {
   list-style: disc;
   padding-left: 1.25em;
 }
+.num-list {
+  padding-left: 1.25em;
+}
+.num-list li {
+  padding-left: .25em;
+  padding-bottom: .5em;
+}
 .epigraph {
   color: var(--plum);
   font-style: italic;
@@ -711,10 +718,22 @@ p.drop {
     line-height: .78;
 }
 .dropcap.i {
-    margin: 0px 14px -14px 0px;
+    margin: 0px 8px -14px 0px;
     line-height: .75;
 }
 .dropcap.d {
+    margin: 0 10px -14px 0px;
+    line-height: .75;
+}
+.dropcap.a {
+    margin: 0 10px -14px 0px;
+    line-height: .75;
+}
+.dropcap.w {
+    margin: 0 10px -14px 0px;
+    line-height: .75;
+}
+.dropcap.s {
     margin: 0 10px -14px 0px;
     line-height: .75;
 }
