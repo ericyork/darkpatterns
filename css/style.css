@@ -462,7 +462,19 @@ a:hover, a:active {
   width: 87%;
   margin: 0 auto;
 }
-/*--Document Media Queries --*/
+figure {
+  margin: 1em auto;
+  padding: .5em;
+  background-color: #111227;
+  width: 130%;
+  max-width: 130%;
+  transform: translateX(-15%);
+}
+figcaption {
+  font-style: italic;
+  font-size: .95em;
+}
+/*--Layout Media Queries --*/
 @media screen and (min-width: 576px) {
   html {font-size: 19px;}
   .type {width: 79%;}
@@ -734,6 +746,10 @@ p.drop {
     line-height: .75;
 }
 .dropcap.s {
+    margin: 0 10px -14px 0px;
+    line-height: .75;
+}
+.dropcap.f {
     margin: 0 10px -14px 0px;
     line-height: .75;
 }
