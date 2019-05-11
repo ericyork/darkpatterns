@@ -335,6 +335,7 @@ html {
 body {
   font-family: 'Gentium Book Basic', serif;
   color: var(--offwhite);
+  position: relative; /*-- required for absolute positioning of children --*/
 }
 body {
   background: var(--lapis);
@@ -706,11 +707,15 @@ p.drop {
     color: var(--plum);
 }
 .dropcap.t {
-    margin: 0 14px -16px 0px;
-    line-height: .75;
+    margin: 0 14px -14px 0px;
+    line-height: .78;
 }
 .dropcap.i {
-    margin: 0px 14px -16px 0px;
+    margin: 0px 14px -14px 0px;
+    line-height: .75;
+}
+.dropcap.d {
+    margin: 0 10px -14px 0px;
     line-height: .75;
 }
 /*-- Gallery Styles --*/
@@ -926,7 +931,7 @@ a:active #next, a:active #back  {
 .to-top {
   position: fixed;
   right: 5%;
-  bottom: .75em;
+  bottom: .85em;
   display: none;
   z-index: 999
 }
@@ -948,47 +953,47 @@ a:active #next, a:active #back  {
 .sm-bubbles{
   position: absolute;
   left: 5%;
-  top: 200%;
+  top: 25%;
 }
 .sm-round {
   position: absolute;
   left: 6%;
-  top: 370%;
+  top: 22%;
 }
 .round-fish {
   position: absolute;
   left: 5%;
-  top: 480%;
+  top: 48%;
 }
 .bubbles {
   position: absolute;
   right: 5%;
-  top: 200%;
+  top: 36%;
 }
 .sm-fish {
   position: absolute;
   right: 7%;
-  top: 370%;
+  top: 72%;
 }
 .xs-fish {
   position: absolute;
   right: 5%;
-  top: 480%;
+  top: 30%;
 }
 .fish {
   position: absolute;
   right: 5%;
-  top: 387%;
+  top: 81%;
 }
 .octopus {
   position: absolute;
   right: 1%;
-  top: 445%;
+  top: 88%;
 }
 .angler {
   position: absolute;
   left: 1%;
-  top: 385%;
+  top: 92%;
 }
 
 /*-- Footer Styles --*/
