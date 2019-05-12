@@ -471,6 +471,7 @@ figure {
   transform: translateX(-15%);
 }
 figcaption {
+  padding: .5em 0;
   font-style: italic;
   font-size: .95em;
 }
