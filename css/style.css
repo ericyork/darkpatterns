@@ -343,6 +343,9 @@ body {
   background: -webkit-linear-gradient(to top, #111227, #25274D);
   background: linear-gradient(to top, #111227, #25274D);
 }
+.type {
+  position: relative;
+}
 .type p::selection {
   background: var(--plum);
 }
@@ -1031,7 +1034,105 @@ a:active #next, a:active #back  {
   left: 1%;
   top: 92%;
 }
-
+/*-- Bubble Styles --*/
+.bubbles:nth-child(1) {
+  position: absolute;
+  top: 96%;
+  left: 4%;
+  animation: rise1 12s infinite ease-in both;
+}
+.bubbles:nth-child(2) {
+  position: absolute;
+  top: 98%;
+  left: 5%;
+  animation: rise2 15s infinite ease-in both;
+}
+.bubbles:nth-child(3) {
+  position: absolute;
+  top: 98%;
+  left: 7%;
+  animation: rise3 14s infinite ease-in both;
+}
+.bubbles:nth-child(4) {
+  position: absolute;
+  top: 98%;
+  left: 7%;
+  animation: rise4 13s infinite ease-in both;
+}
+.bubbles svg g path:nth-child(1) {
+  animation: fade 12s infinite ease-in-out both;
+  stroke: rgba(125,126,147,0);
+}
+.bubbles svg g path:nth-child(2) {
+  animation: fade 15s infinite ease-in-out both;
+  stroke: rgba(125,126,147,0);
+}
+.bubbles svg g path:nth-child(3) {
+  animation: fade 14s infinite ease-in-out both;
+  stroke: rgba(125,126,147,0);
+}
+.bubbles svg g path:nth-child(4) {
+  animation: fade 13s infinite ease-in-out both;
+  stroke: rgba(125,126,147,0);
+}
+@keyframes rise1 {
+  0% {top: 98%;}
+  10% {left: 6%;}
+  20% {left: 4%;}
+  30% {left: 6%;}
+  40% {left: 4%;}
+  50% {left: 6%;}
+  60% {left: 4%;}
+  70% {left: 6%;}
+  80% {left: 4%;}
+  90% {left: 6%;}
+  100% {top: 2%;}
+}
+@keyframes rise2 {
+  0% {top: 96%;}
+  10% {left: 5%;}
+  20% {left: 3%;}
+  30% {left: 5%;}
+  40% {left: 3%;}
+  50% {left: 5%;}
+  60% {left: 3%;}
+  70% {left: 5%;}
+  80% {left: 3%;}
+  90% {left: 5%;}
+  100% {top: 2%;}
+}
+@keyframes rise3 {
+  0% {top: 98%;}
+  10% {left: 8%;}
+  20% {left: 6%;}
+  30% {left: 8%;}
+  40% {left: 6%;}
+  50% {left: 8%;}
+  60% {left: 6%;}
+  70% {left: 8%;}
+  80% {left: 6%;}
+  90% {left: 8%;}
+  100% {top: 2%;}
+}
+@keyframes rise4 {
+  0% {top: 97%;}
+  10% {left: 7%;}
+  20% {left: 5%;}
+  30% {left: 7%;}
+  40% {left: 5%;}
+  50% {left: 7%;}
+  60% {left: 5%;}
+  70% {left: 7%;}
+  80% {left: 5%;}
+  90% {left: 7%;}
+  100% {top: 2%;}
+}
+@keyframes fade {
+  0% {stroke: rgba(125,126,147,0);}
+  10% {stroke: rgba(125,126,147,.9);}
+  90% {stroke: rgba(125,126,147,.4);}
+  100% {stroke: rgba(255,255,255,0);}
+}
 /*-- Footer Styles --*/
 footer {
   font-family: 'Work Sans', sans-serif;
