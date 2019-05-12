@@ -1004,11 +1004,12 @@ a:active #next, a:active #back  {
   left: 5%;
   top: 48%;
 }
+/*--
 .bubbles {
   position: absolute;
   right: 5%;
   top: 36%;
-}
+}--*/
 .sm-fish {
   position: absolute;
   right: 7%;
