@@ -1039,10 +1039,12 @@ a:active #next, a:active #back  {
 .bubbles {
   position: absolute;
   top: 99%;
+  transform: rotateY(180deg);
 }
 .bubbles-r {
   position: absolute;
   top: 99%;
+  transform: rotateY(180deg);
 }
 .bubbles svg g path {
   stroke: rgba(125,126,147,0);
