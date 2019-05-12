@@ -1259,7 +1259,7 @@ a:active #next, a:active #back  {
 @keyframes fade {
   0% {stroke: rgba(125,126,147,0);}
   10% {stroke: rgba(125,126,147,.9);}
-  90% {stroke: rgba(125,126,147,.4);}
+  90% {stroke: rgba(125,126,147,.7);}
   100% {stroke: rgba(255,255,255,0);}
 }
 /*-- Footer Styles --*/
