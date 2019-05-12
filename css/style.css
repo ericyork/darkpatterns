@@ -994,11 +994,6 @@ a:active #next, a:active #back  {
   left: 5%;
   top: 25%;
 }
-.sm-round {
-  position: absolute;
-  left: 6%;
-  top: 22%;
-}
 .round-fish {
   position: absolute;
   left: 5%;
@@ -1034,6 +1029,49 @@ a:active #next, a:active #back  {
   position: absolute;
   left: 1%;
   top: 92%;
+}
+/*-- Fish Styles --*/
+.fish {
+  position: absolute;
+  width: 73px;
+  left: 10.5%;
+  top: 38%;
+  animation: swim 4s infinite;
+}
+.fish img {
+  transform-origin: center center;
+  animation: school 4s infinite;
+}
+@keyframes swim {
+  0% {
+    transform: translateX(-125px);
+    top: 38%;
+  }
+  50% {
+    transform: translateX(125px);
+    top: 38.5%;
+  }
+  100% {
+    transform: translateX(-125px);
+    top: 38%;
+  }
+}
+@keyframes school {
+  0% {
+    transform: rotateY(0deg);
+  }
+  49% {
+    transform: rotateY(1deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  99% {
+    transform: rotateY(181deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 /*-- Bubble Styles --*/
 .bubbles {
