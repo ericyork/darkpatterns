@@ -1038,40 +1038,70 @@ a:active #next, a:active #back  {
 /*-- Bubble Styles --*/
 .bubbles {
   position: absolute;
+  top: 99%;
+}
+.bubbles-r {
+  position: absolute;
+  top: 99%;
 }
 .bubbles svg g path {
   stroke: rgba(125,126,147,0);
 }
+.bubbles-r svg g path {
+  stroke: rgba(125,126,147,0);
+}
+/*-- left bubbles --*/
 .bubbles:nth-child(1) {
   left: 4%;
-  animation: rise1 12s infinite ease-in;
+  animation: rise1 24s infinite ease-in;
 }
 .bubbles:nth-child(2) {
   left: 5%;
-  animation: rise2 15s infinite ease-in;
+  animation: rise2 30s infinite ease-in;
 }
 .bubbles:nth-child(3) {
   left: 7%;
-  animation: rise3 14s infinite ease-in;
+  animation: rise3 28s infinite ease-in;
 }
 .bubbles:nth-child(4) {
   left: 7%;
-  animation: rise4 13s infinite ease-in;
+  animation: rise4 26s infinite ease-in;
 }
-.bubbles svg g path:nth-child(1) {
-  animation: fade 12s infinite ease-in-out;
+.bubbles:nth-child(5) {
+  left: 4%;
+  animation: rise1 24s infinite 8s ease-in;
 }
-.bubbles svg g path:nth-child(2) {
-  animation: fade 15s infinite ease-in-out;
+.bubbles:nth-child(6) {
+  left: 7%;
+  animation: rise3 28s infinite 8s ease-in;
 }
-.bubbles svg g path:nth-child(3) {
-  animation: fade 14s infinite ease-in-out;
+.bubbles:nth-child(7) {
+  left: 7%;
+  animation: rise4 26s infinite 8s ease-in;
 }
-.bubbles svg g path:nth-child(4) {
-  animation: fade 13s infinite ease-in-out;
+.bubbles:nth-child(1) svg g path {
+  animation: fade 24s infinite ease-in-out;
+}
+.bubbles:nth-child(2) svg g path {
+  animation: fade 30s infinite ease-in-out;
+}
+.bubbles:nth-child(3) svg g path {
+  animation: fade 28s infinite ease-in-out;
+}
+.bubbles:nth-child(4) svg g path {
+  animation: fade 26s infinite ease-in-out;
+}
+.bubbles:nth-child(5) svg g path {
+  animation: fade 24s infinite 8s ease-in-out both;
+}
+.bubbles:nth-child(6) svg g path {
+  animation: fade 28s infinite 8s ease-in-out both;
+}
+.bubbles:nth-child(7) svg g path {
+  animation: fade 26s infinite 8s ease-in-out both;
 }
 @keyframes rise1 {
-  0% {top: 98%;}
+  0% {top: 96%;}
   10% {left: 6%;}
   20% {left: 4%;}
   30% {left: 6%;}
@@ -1084,7 +1114,7 @@ a:active #next, a:active #back  {
   100% {top: 2%;}
 }
 @keyframes rise2 {
-  0% {top: 96%;}
+  0% {top: 99%;}
   10% {left: 5%;}
   20% {left: 3%;}
   30% {left: 5%;}
@@ -1120,6 +1150,108 @@ a:active #next, a:active #back  {
   70% {left: 7%;}
   80% {left: 5%;}
   90% {left: 7%;}
+  100% {top: 2%;}
+}
+/*-- right bubbles --*/
+.bubbles-r:nth-child(1) {
+  right: 4%;
+  animation: rise-r1 30s infinite ease-in;
+}
+.bubbles-r:nth-child(2) {
+  right: 5%;
+  animation: rise-r2 36s infinite ease-in;
+}
+.bubbles-r:nth-child(3) {
+  right: 7%;
+  animation: rise-r3 34s infinite ease-in;
+}
+.bubbles-r:nth-child(4) {
+  right: 7%;
+  animation: rise-r4 32s infinite ease-in;
+}
+.bubbles-r:nth-child(5) {
+  right: 4%;
+  animation: rise-r1 18s infinite 4s ease-in;
+}
+.bubbles-r:nth-child(6) {
+  right: 7%;
+  animation: rise-r3 22s infinite 4s ease-in;
+}
+.bubbles-r:nth-child(7) {
+  right: 7%;
+  animation: rise-r4 20s infinite 4s ease-in;
+}
+.bubbles-r:nth-child(1) svg g path {
+  animation: fade 30s infinite ease-in-out;
+}
+.bubbles-r:nth-child(2) svg g path {
+  animation: fade 36s infinite ease-in-out;
+}
+.bubbles-r:nth-child(3) svg g path {
+  animation: fade 34s infinite ease-in-out;
+}
+.bubbles-r:nth-child(4) svg g path {
+  animation: fade 32s infinite ease-in-out;
+}
+.bubbles-r:nth-child(5) svg g path {
+  animation: fade 18s infinite 4s ease-in-out both;
+}
+.bubbles-r:nth-child(6) svg g path {
+  animation: fade 22s infinite 4s ease-in-out both;
+}
+.bubbles-r:nth-child(7) svg g path {
+  animation: fade 20s infinite 4s ease-in-out both;
+}
+@keyframes rise-r1 {
+  0% {top: 97%;}
+  10% {right: 6%;}
+  20% {right: 4%;}
+  30% {right: 6%;}
+  40% {right: 4%;}
+  50% {right: 6%;}
+  60% {right: 4%;}
+  70% {right: 6%;}
+  80% {right: 4%;}
+  90% {right: 6%;}
+  100% {top: 2%;}
+}
+@keyframes rise-r2 {
+  0% {top: 98%;}
+  10% {right: 5%;}
+  20% {right: 3%;}
+  30% {right: 5%;}
+  40% {right: 3%;}
+  50% {right: 5%;}
+  60% {right: 3%;}
+  70% {right: 5%;}
+  80% {right: 3%;}
+  90% {right: 5%;}
+  100% {top: 2%;}
+}
+@keyframes rise-r3 {
+  0% {top: 96%;}
+  10% {right: 8%;}
+  20% {right: 6%;}
+  30% {right: 8%;}
+  40% {right: 6%;}
+  50% {right: 8%;}
+  60% {right: 6%;}
+  70% {right: 8%;}
+  80% {right: 6%;}
+  90% {right: 8%;}
+  100% {top: 2%;}
+}
+@keyframes rise-r4 {
+  0% {top: 99%;}
+  10% {right: 7%;}
+  20% {right: 5%;}
+  30% {right: 7%;}
+  40% {right: 5%;}
+  50% {right: 7%;}
+  60% {right: 5%;}
+  70% {right: 7%;}
+  80% {right: 5%;}
+  90% {right: 7%;}
   100% {top: 2%;}
 }
 @keyframes fade {
