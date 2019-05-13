@@ -471,7 +471,7 @@ figure {
   background-color: #111227;
   width: 130%;
   max-width: 130%;
-  transform: translateX(-15%);
+  transform: translateX(-12%);
 }
 figcaption {
   padding: .5em 0;
@@ -754,6 +754,10 @@ p.drop {
     line-height: .75;
 }
 .dropcap.f {
+    margin: 0 10px -14px 0px;
+    line-height: .75;
+}
+.dropcap.o {
     margin: 0 10px -14px 0px;
     line-height: .75;
 }
@@ -1103,9 +1107,9 @@ a:active #next, a:active #back  {
 }
 @keyframes school5 {
   0% {transform: rotateY(0deg);}
-  48% {transform: rotateY(1deg);}
+  49.9% {transform: rotateY(1deg);}
   50% {transform: rotateY(180deg);}
-  98% {transform: rotateY(181deg);}
+  99.9% {transform: rotateY(181deg);}
   100% {transform: rotateY(0deg);}
 }
 /*-- Bubble Styles --*/
@@ -1227,7 +1231,7 @@ a:active #next, a:active #back  {
   90% {left: 7%;}
   100% {top: 2%;}
 }
-/*-- right bubbles --*/
+/*-- Right bubbles --*/
 .bubbles-r:nth-child(1) {
   right: 4%;
   animation: rise-r1 30s infinite ease-in;
@@ -1278,7 +1282,7 @@ a:active #next, a:active #back  {
   animation: fade 20s infinite 4s ease-in-out both;
 }
 @keyframes rise-r1 {
-  0% {top: 97%;}
+  0% {top: 94%;}
   10% {right: 6%;}
   20% {right: 4%;}
   30% {right: 6%;}
@@ -1291,7 +1295,7 @@ a:active #next, a:active #back  {
   100% {top: 2%;}
 }
 @keyframes rise-r2 {
-  0% {top: 98%;}
+  0% {top: 95%;}
   10% {right: 5%;}
   20% {right: 3%;}
   30% {right: 5%;}
@@ -1304,7 +1308,7 @@ a:active #next, a:active #back  {
   100% {top: 2%;}
 }
 @keyframes rise-r3 {
-  0% {top: 96%;}
+  0% {top: 93%;}
   10% {right: 8%;}
   20% {right: 6%;}
   30% {right: 8%;}
@@ -1317,7 +1321,7 @@ a:active #next, a:active #back  {
   100% {top: 2%;}
 }
 @keyframes rise-r4 {
-  0% {top: 99%;}
+  0% {top: 96%;}
   10% {right: 7%;}
   20% {right: 5%;}
   30% {right: 7%;}
