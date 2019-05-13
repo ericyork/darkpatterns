@@ -1103,9 +1103,9 @@ a:active #next, a:active #back  {
 }
 @keyframes school5 {
   0% {transform: rotateY(0deg);}
-  45% {transform: rotateY(1deg);}
+  48% {transform: rotateY(1deg);}
   50% {transform: rotateY(180deg);}
-  95% {transform: rotateY(181deg);}
+  98% {transform: rotateY(181deg);}
   100% {transform: rotateY(0deg);}
 }
 /*-- Bubble Styles --*/
