@@ -989,7 +989,7 @@ a:active #next, a:active #back  {
   color: var(--plum);
   border: 1px solid var(--plum);
 }
-/*-- Fish Styles --*/
+/*-- Round Fish Styles --*/
 .sm-round {
   position: absolute;
   width: 73px;
@@ -1013,7 +1013,101 @@ a:active #next, a:active #back  {
   99% {transform: rotateY(181deg);}
   100% {transform: rotateY(0deg);}
 }
-
+.lg-round {
+  position: absolute;
+  width: 91px;
+  left: 10.5%;
+  top: 40%;
+  animation: swim2 4.5s infinite;
+}
+.lg-round img {
+  transform-origin: center center;
+  animation: school2 4.5s infinite;
+}
+@keyframes swim2 {
+  0% {transform: translateX(110px); top: 39.5%;}
+  50% {transform: translateX(-125px); top: 40%;}
+  100% {transform: translateX(110px); top: 39.5%;}
+}
+@keyframes school2 {
+  0% {transform: rotateY(0deg);}
+  49% {transform: rotateY(1deg);}
+  50% {transform: rotateY(180deg);}
+  99% {transform: rotateY(181deg);}
+  100% {transform: rotateY(0deg);}
+}
+/*-- Fish Styles --*/
+.sm-fish {
+  position: absolute;
+  width: 110px;
+  right: 10.5%;
+  top: 64%;
+  animation: swim3 4s infinite;
+}
+.sm-fish img {
+  transform-origin: center center;
+  animation: school3 4s infinite;
+}
+@keyframes swim3 {
+  0% {transform: translateX(105px); top: 64%;}
+  50% {transform: translateX(-105px); top: 64.5%;}
+  100% {transform: translateX(105px); top: 64%;}
+}
+@keyframes school3 {
+  0% {transform: rotateY(0deg);}
+  49% {transform: rotateY(1deg);}
+  50% {transform: rotateY(180deg);}
+  99% {transform: rotateY(181deg);}
+  100% {transform: rotateY(0deg);}
+}
+.xs-fish {
+  position: absolute;
+  width: 91px;
+  right: 10.5%;
+  top:65%;
+  animation: swim4 4.5s infinite;
+}
+.xs-fish img {
+  transform-origin: center center;
+  animation: school4 4.5s infinite;
+}
+@keyframes swim4 {
+  0% {transform: translateX(-110px); top: 65.5%;}
+  50% {transform: translateX(125px); top: 66%;}
+  100% {transform: translateX(-110px); top: 65.5%;}
+}
+@keyframes school4 {
+  0% {transform: rotateY(0deg);}
+  49% {transform: rotateY(1deg);}
+  50% {transform: rotateY(180deg);}
+  99% {transform: rotateY(181deg);}
+  100% {transform: rotateY(0deg);}
+}
+.angler {
+  position: absolute;
+  widthh: 260px;
+  right: 4%;
+  top: 95%;
+  animation: swim5 7s infinite;
+}
+.angler img {
+  transform-origin: center center;
+  animation: school5 7s infinite ease-in-out;
+}
+@keyframes swim5 {
+  0% {transform: translateX(-50px); top: 95%;}
+  25% {top: 95.5%;}
+  50% {transform: translateX(50px); top: 95%;}
+  75% {top: 94.5%;}
+  100% {transform: translateX(-50px); top: 95%;}
+}
+@keyframes school5 {
+  0% {transform: rotateY(0deg);}
+  45% {transform: rotateY(1deg);}
+  50% {transform: rotateY(180deg);}
+  95% {transform: rotateY(181deg);}
+  100% {transform: rotateY(0deg);}
+}
 /*-- Bubble Styles --*/
 .bubbles {
   position: absolute;
