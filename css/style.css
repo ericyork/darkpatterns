@@ -775,8 +775,7 @@ p.drop {
   border-radius: 4px;
 }
 .thumb {
-  background-image: url('https://picsum.photos/300/200/?random');
-  padding-bottom: 56%;
+  padding-bottom: 66%;
   background-size: cover;
   background-position: center center;
   border-radius: 4px 4px 0 0;
@@ -806,9 +805,10 @@ p.drop {
   .card:nth-child(4) .thumb {padding-bottom: 32%;}
 }
 /*-- Card Backgrounds --*/
-.card:nth-child(2) .thumb {background-image: url('https://picsum.photos/300/200/?image=14');}
-.card:nth-child(3) .thumb {background-image: url('https://picsum.photos/300/200/?image=24');}
-.card:nth-child(4) .thumb {background-image: url('https://picsum.photos/300/200/?image=35');}
+.card:nth-child(1) .thumb {background-image: url('../../bin-img/camo1.jpg');}
+.card:nth-child(2) .thumb {background-image: url('../../bin-img/misdirect1.png');}
+.card:nth-child(3) .thumb {background-image: url('../../bin-img/discourage1.png');}
+.card:nth-child(4) .thumb {background-image: url('../../bin-img/disorient1.png');}
 .card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
 .card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=54');} /*--
 } extra for radability--*/
