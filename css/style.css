@@ -776,15 +776,15 @@ p.drop {
   cursor: pointer;
   transition: var(--tr-std);
   opacity: .9;
+  padding: .5em;
 }
 .thumb {
   padding-bottom: 56%;
   background-size: cover;
   background-position: center center;
-  border-radius: 4px 4px 0 0;
 }
 .card-content {
-  padding: 0 .5em .7em .5em;
+  padding-bottom: .7em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -842,12 +842,12 @@ button.card-more, button.card-more:visited {
   .container {grid-template-columns: repeat(3, 1fr);}
 }
 /*-- Card Backgrounds --*/
-.card:nth-child(1) .thumb {background-image: url('../../bin-img/camo1.jpg');}
-.card:nth-child(2) .thumb {background-image: url('../../bin-img/misdirect1.png');}
-.card:nth-child(3) .thumb {background-image: url('../../bin-img/discourage1.png');}
-.card:nth-child(4) .thumb {background-image: url('../../bin-img/disorient1.png');}
-.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
-.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=54');} /*--
+.thumb.camouflaging {background-image: url('../../bin-img/camo1.jpg');}
+.thumb.misdirecting {background-image: url('../../bin-img/misdirect1.png');}
+.thumb.discouraging {background-image: url('../../bin-img/discourage1.png');}
+.thumb.disorienting {background-image: url('../../bin-img/disorient1.png');}
+.thumb.shaming {background-image: url('../../bin-img/shaming1.png');}
+.thumb.disguising {background-image: url('../../bin-img/disguise1.jpeg');} /*--
 } extra for radability--*/
 /*-- Modal Styles --*/
 /* The Modal (background) */
