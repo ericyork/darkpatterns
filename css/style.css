@@ -770,12 +770,12 @@ p.drop {
 }
 .card {
   position: relative;
-  background: transparent;
-  border: 1px solid var(--plum);
+  background: var(--drklapis);
+  border: 1.5px solid var(--plum);
   border-radius: 4px;
 }
 .thumb {
-  padding-bottom: 66%;
+  padding-bottom: 56%;
   background-size: cover;
   background-position: center center;
   border-radius: 4px 4px 0 0;
@@ -787,8 +787,6 @@ p.drop {
   .container {grid-template-columns: repeat(2, 1fr);}
   .card:first-child {grid-column: 1/ span 2;}
   .card:nth-child(4) {grid-column: 1/ span 2;}
-  .card:first-child .thumb {padding-bottom: 32%;}
-  .card:nth-child(4) .thumb {padding-bottom: 32%;}
 }
 @media screen and (min-width: 992px) {
   .container {grid-template-columns: repeat(3, 1fr);}
@@ -798,11 +796,7 @@ p.drop {
   .card:nth-child(4) .thumb {padding-bottom: 56%;}
 }
 @media screen and (min-width: 1200px) {
-  .container {grid-template-columns: repeat(4, 1fr);}
-  .card:first-child {grid-column: 1/ span 2;}
-  .card:nth-child(4) {grid-column: 1/ span 2;}
-  .card:first-child .thumb {padding-bottom: 32%;}
-  .card:nth-child(4) .thumb {padding-bottom: 32%;}
+  .container {grid-template-columns: repeat(3, 1fr);}
 }
 /*-- Card Backgrounds --*/
 .card:nth-child(1) .thumb {background-image: url('../../bin-img/camo1.jpg');}
@@ -819,7 +813,7 @@ p.drop {
   align-items: center;
 }
 .card-title {
-  margin: .2em 0 0 0;
+  margin: .5em 0 0 0;
   font-family: 'Work Sans', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -830,7 +824,7 @@ p.drop {
   font-size: .80em;
   line-height: 1.2;
   align-self: flex-start;
-  color: var(--offwhite);
+  color: var(--plum);
 }
 button.card-more {
   background: transparent;
@@ -847,8 +841,8 @@ button.card-more, button.card-more:visited {
   border: 1.5px solid var(--plum);
 }
 button.card-more:hover, button.card-more:active {
-  color: var(--cerulean);
-  border-color: var(--cerulean);
+  color: var(--offwhite);
+  border-color: var(--offwhite);
 }
 /*-- Modal Styles --*/
 /* The Modal (background) */
