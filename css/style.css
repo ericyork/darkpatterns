@@ -867,7 +867,7 @@ button.card-more, button.card-more:visited {
    color: var(--lapis);
    margin: 3% auto;
    padding: 1em;
-   width: 92%;
+   width: 90%;
    border-radius: 4px;
    animation: fadein .3s ease-in-out;
 }
@@ -952,8 +952,8 @@ button.card-more, button.card-more:visited {
   color: var(--cerulean);
 }
 .pagination a:hover, .pagination a:active {
-  border-color: var(--plum);
-  color: var(--plum);
+  border-color: var(--offwhitw);
+  color: var(--offwhite);
 }
 .icon {
   width: 25px;
@@ -967,7 +967,7 @@ a:visited #next, a:visited #back {
 }
 a:hover #next, a:hover #back,
 a:active #next, a:active #back  {
-  fill: var(--plum);
+  fill: var(--offwhite);
 }
 /*-- Back-to-top Button --*/
 .to-top {
@@ -979,7 +979,7 @@ a:active #next, a:active #back  {
 }
 .top-button {
   font-size: 150%;
-  background-color: transparent;
+  background-color: var(--drklapis);
   padding: .2em .3em .15em .3em;
   text-decoration: none;
   border-radius: 4px;
@@ -989,8 +989,8 @@ a:active #next, a:active #back  {
   border: 1px solid var(--cerulean);
 }
 .to-top a:hover, .to-top a:active {
-  color: var(--plum);
-  border: 1px solid var(--plum);
+  color: var(--offwhite);
+  border: 1px solid var(--offwhite);
 }
 /*-- Round Fish Styles --*/
 .sm-round {
