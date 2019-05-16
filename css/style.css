@@ -773,6 +773,9 @@ p.drop {
   background: var(--drklapis);
   border: 1.5px solid var(--plum);
   border-radius: 4px;
+  cursor: pointer;
+  transition: var(--tr-std);
+  opacity: .9;
 }
 .thumb {
   padding-bottom: 56%;
@@ -780,32 +783,6 @@ p.drop {
   background-position: center center;
   border-radius: 4px 4px 0 0;
 }
-@media screen and (min-width: 556px) {
-  .container {grid-template-columns: repeat(2, 1fr);}
-}
-@media screen and (min-width: 768px) {
-  .container {grid-template-columns: repeat(2, 1fr);}
-  .card:first-child {grid-column: 1/ span 2;}
-  .card:nth-child(4) {grid-column: 1/ span 2;}
-}
-@media screen and (min-width: 992px) {
-  .container {grid-template-columns: repeat(3, 1fr);}
-  .card:first-child {grid-column: 1/ span 1;}
-  .card:nth-child(4) {grid-column: 1/ span 1;}
-  .card:first-child .thumb {padding-bottom: 56%;}
-  .card:nth-child(4) .thumb {padding-bottom: 56%;}
-}
-@media screen and (min-width: 1200px) {
-  .container {grid-template-columns: repeat(3, 1fr);}
-}
-/*-- Card Backgrounds --*/
-.card:nth-child(1) .thumb {background-image: url('../../bin-img/camo1.jpg');}
-.card:nth-child(2) .thumb {background-image: url('../../bin-img/misdirect1.png');}
-.card:nth-child(3) .thumb {background-image: url('../../bin-img/discourage1.png');}
-.card:nth-child(4) .thumb {background-image: url('../../bin-img/disorient1.png');}
-.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
-.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=54');} /*--
-} extra for radability--*/
 .card-content {
   padding: 0 .5em .7em .5em;
   display: flex;
@@ -819,12 +796,25 @@ p.drop {
   text-transform: uppercase;
   align-self: flex-start;
   color: var(--plum);
+  transition: var(--tr-std);
 }
 .card-text {
   font-size: .80em;
   line-height: 1.2;
   align-self: flex-start;
   color: var(--plum);
+  transition: var(--tr-std);
+}
+.card:hover {
+  border-color: var(--offwhite);
+  opacity: 1;
+}
+.card:hover .card-title, .card:hover .card-text {
+  color: var(--offwhite);
+}
+.card:hover .card-more {
+  border-color: var(--offwhite);
+  color: var(--offwhite);
 }
 button.card-more {
   background: transparent;
@@ -835,15 +825,30 @@ button.card-more {
   font-family: 'Work Sans', sans-serif;
   letter-spacing: -.75px;
   cursor: pointer;
+  transition: var(--tr-std);
 }
 button.card-more, button.card-more:visited {
   color: var(--plum);
   border: 1.5px solid var(--plum);
 }
-button.card-more:hover, button.card-more:active {
-  color: var(--offwhite);
-  border-color: var(--offwhite);
+.card:hover button.card-more:hover, .card:hover button.card-more:active {
+  color: var(--plum);
+  border-color: var(--plum);
 }
+@media screen and (min-width: 556px) {
+  .container {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 992px) {
+  .container {grid-template-columns: repeat(3, 1fr);}
+}
+/*-- Card Backgrounds --*/
+.card:nth-child(1) .thumb {background-image: url('../../bin-img/camo1.jpg');}
+.card:nth-child(2) .thumb {background-image: url('../../bin-img/misdirect1.png');}
+.card:nth-child(3) .thumb {background-image: url('../../bin-img/discourage1.png');}
+.card:nth-child(4) .thumb {background-image: url('../../bin-img/disorient1.png');}
+.card:nth-child(5) .thumb {background-image: url('https://picsum.photos/300/200/?image=44');}
+.card:nth-child(6) .thumb {background-image: url('https://picsum.photos/300/200/?image=54');} /*--
+} extra for radability--*/
 /*-- Modal Styles --*/
 /* The Modal (background) */
 .modal {
