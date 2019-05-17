@@ -865,8 +865,8 @@ button.card-more, button.card-more:visited {
 .modal-content {
    background-color: var(--brtwhite);
    color: var(--lapis);
-   margin: 3% auto;
-   padding: 1em;
+   margin: 5% auto;
+   padding: 1.5em;
    width: 90%;
    border-radius: 4px;
    animation: fadein .3s ease-in-out;
@@ -902,8 +902,7 @@ button.card-more, button.card-more:visited {
 .modal-body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1em;
-  font-size: 85%;
+  grid-gap: 1.5em;
 }
 @media screen and (min-width: 556px) {
   .modal-body {grid-template-columns: 1fr;}
@@ -912,22 +911,25 @@ button.card-more, button.card-more:visited {
   .modal-body {grid-template-columns: 1fr;}
 }
 @media screen and (min-width: 992px) {
-  .modal-body {grid-template-columns: 5fr 7fr;}
+  .modal-body {grid-template-columns: 7fr 5fr;}
 }
 @media screen and (min-width: 1200px) {
-  .modal-body {grid-template-columns: 5fr 7fr;}
+  .modal-body {grid-template-columns: 7fr 5fr;}
 }
-.eg-text p {
-  -webkit-columns: 280px 2;
-   -moz-columns: 280px 2;
-        columns: 280px 2;
-}
+
 .eg-text h3 {
   margin-top: 0;
   padding-top: 0;
 }
 .modal-body img {
   margin-bottom: 1.5em;
+}
+.twitter-tweet {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media screen and (max-width: 768px) {
+  .twitter-tweet {width: 100% !important;}
 }
 /*-- Pagination Nav Buttons --*/
 .pagination {
