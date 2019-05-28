@@ -861,6 +861,7 @@ button.card-more, button.card-more:visited {
    height: 100%;
    overflow: auto;
    background-color: rgba(17, 18, 39, 0.85);
+   font-size: 95%;
 }
 .modal-content {
    background-color: var(--brtwhite);
@@ -899,30 +900,32 @@ button.card-more, button.card-more:visited {
    text-decoration: none;
    cursor: pointer;
 }
-.modal-body {
+.entry-wrap {
+  border-top: 1px solid var(--offwhite);
+  padding-top: 2em;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5em;
 }
 @media screen and (min-width: 556px) {
-  .modal-body {grid-template-columns: 1fr;}
+  .entry-wrap {grid-template-columns: 1fr;}
 }
 @media screen and (min-width: 768px) {
-  .modal-body {grid-template-columns: 1fr;}
+  .entry-wrap {grid-template-columns: 1fr;}
 }
 @media screen and (min-width: 992px) {
-  .modal-body {grid-template-columns: 7fr 5fr;}
+  .entry-wrap {grid-template-columns: 7fr 5fr;}
 }
 @media screen and (min-width: 1200px) {
-  .modal-body {grid-template-columns: 7fr 5fr;}
+  .entry-wrap {grid-template-columns: 7fr 5fr;}
 }
-
+.entry-wrap p:last-child {
+  margin-bottom: 0;
+}
 .eg-text h3 {
   margin-top: 0;
   padding-top: 0;
-}
-.modal-body img {
-  margin-bottom: 1.5em;
 }
 .twitter-tweet {
   margin-left: auto !important;
