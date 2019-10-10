@@ -409,6 +409,9 @@ blockquote {
   font-size: 1em;
   line-height: 1.4;
 }
+blockquote.inline-quote {
+  margin-bottom: 1.1em;
+}
 cite {
   text-align: right;
   margin-top: .5em;
@@ -473,10 +476,22 @@ figure {
   max-width: 130%;
   transform: translateX(-12%);
 }
+figure img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
 figcaption {
   padding: .5em 0;
   font-style: italic;
   font-size: .95em;
+}
+.filligree {
+  font-size: 133%;
+  text-align: center;
+}
+.pinwheel {
+  margin: 0 .66em;
 }
 /*--Layout Media Queries --*/
 @media screen and (min-width: 576px) {
@@ -730,35 +745,43 @@ p.drop {
     color: var(--plum);
 }
 .dropcap.t {
-    margin: 0 14px -14px 0px;
+    margin: 0 14px 0 0;
     line-height: .78;
 }
 .dropcap.i {
-    margin: 0px 8px -14px 0px;
+    margin: 0 8px 0 0;
     line-height: .75;
 }
 .dropcap.d {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 .dropcap.a {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 .dropcap.w {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 .dropcap.s {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 .dropcap.f {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 .dropcap.o {
-    margin: 0 10px -14px 0px;
+    margin: 0 7px 0 0;
+    line-height: .75;
+}
+.dropcap.m {
+    margin: 0 7px 0 0;
+    line-height: .75;
+}
+.dropcap.c {
+    margin: 0 7px 0 0;
     line-height: .75;
 }
 /*-- Gallery Styles --*/
