@@ -372,7 +372,10 @@ p {
 }
 .text-list {
   list-style: disc;
-  padding-left: 1.25em;
+  padding-left: 2em;
+}
+.text-list li {
+  padding-bottom: .75em;
 }
 .num-list {
   padding-left: 1.25em;
@@ -735,6 +738,29 @@ figcaption {
   color: var(--cerulean);
   text-decoration: underline;
 }
+/*-- Stats Styles --*/
+.stats {
+  padding: .5em;
+  border: 1px solid var(--plum);
+  display: flex;
+  flex-direction: column;
+}
+.stats h4 {
+  margin-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--plum);
+}
+.stat-row {
+  padding: .5em 0;
+  display: flex;
+  justify-content: space-between;
+}
+.crit {
+  font-weight: 700;
+}
+.value {
+
+}
 /*-- Drop Cap Styles --*/
 p.drop {
   margin-top: 2.5em;
@@ -746,6 +772,10 @@ p.drop {
 }
 .dropcap.t {
     margin: 0 14px 0 0;
+    line-height: .78;
+}
+.dropcap.u {
+    margin: 0 7px 0 0;
     line-height: .78;
 }
 .dropcap.e {
