@@ -695,7 +695,7 @@ figcaption {
   border-radius: 5px;
   margin: .5em auto 1em auto;
   width: 90%;
-  padding: 9px .5em 2px .5em;
+  padding: 9px .5em 5px .5em;
 }
 .reverse p {
   color: var(--offwhite);
