@@ -903,12 +903,12 @@ button.card-more, button.card-more:visited {
   .container {grid-template-columns: repeat(3, 1fr);}
 }
 /*-- Card Backgrounds --*/
-.thumb.camouflaging {background-image: url('../../bin-img/camo2.png');}
-.thumb.misdirecting {background-image: url('../../bin-img/misdirect1.png');}
-.thumb.discouraging {background-image: url('../../bin-img/discourage1.png');}
-.thumb.disorienting {background-image: url('../../bin-img/disorient1.png');}
-.thumb.shaming {background-image: url('../../bin-img/shaming1.png');}
-.thumb.disguising {background-image: url('../../bin-img/disguise1.png');} /*--
+.thumb.camouflaging {background-image: url('../bin-img/camo2.png');}
+.thumb.misdirecting {background-image: url('../bin-img/misdirect1.png');}
+.thumb.discouraging {background-image: url('../bin-img/discourage1.png');}
+.thumb.disorienting {background-image: url('../bin-img/disorient1.png');}
+.thumb.shaming {background-image: url('../bin-img/shaming1.png');}
+.thumb.disguising {background-image: url('../bin-img/disguise1.png');} /*--
 } extra for radability--*/
 /*-- Modal Styles --*/
 /* The Modal (background) */
