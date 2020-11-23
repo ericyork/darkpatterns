@@ -314,7 +314,7 @@ template {
   --offwhite: #D1D1D1;
   --cerulean: #2E9CCA;
   --brtwhite: #F1F1F1;
-  --plum: #7d7e93;
+  --plum: #9797a8;
   --yellow: #ccb028;
   /*--Animations--*/
   --tr-std: all .2s ease-in;
@@ -899,6 +899,15 @@ button.card-more, button.card-more:visited {
 .entry-wrap h3:first-child {
   margin-top: 0;
   padding-top: 0;
+}
+.text-wrap h3:first-child {
+  color: var(--offwhite);
+  text-transform: uppercase;
+  font-size: 175%;
+}
+.main-tweet figcaption {
+  border-bottom: 1px solid var(--offwhite);
+  margin-bottom: 1.25em;
 }
 .tweet-container figcaption {
   border-bottom: 1px solid var(--offwhite);
