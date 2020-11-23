@@ -887,11 +887,19 @@ button.card-more, button.card-more:visited {
   grid-template-columns: 1fr;
   grid-gap: 2em;
 }
+.entry-adjunct {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  justify-content: space-between;
+}
 @media screen and (min-width: 556px) {
   .entry-wrap {grid-template-columns: 1fr;}
+  .entry-adjunct {grid-template-columns: 1fr;}
 }
 @media screen and (min-width: 768px) {
   .entry-wrap {grid-template-columns: 7fr 5fr;}
+  .entry-adjunct {grid-template-columns: 1fr 1fr;}
 }
 .entry-wrap p:last-child {
   margin-bottom: 1em;
