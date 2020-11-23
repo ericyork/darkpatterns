@@ -330,7 +330,7 @@ template {
 }
 /*--Document--*/
 html {
-  font-size: 18px;
+  font-size: 20px;
 }
 body {
   font-family: 'Gentium Book Basic', serif;
@@ -358,15 +358,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .25em 0;
   color: var(--plum);
 }
-h1 {font-size: 1.8em;}
-h2 {font-size: 1.6em;}
-h3 {font-size: 1.4em;}
-h4 {font-size: 1.2em;}
-h5 {font-size: 1em;}
-h6 {font-size: .9em; text-transform: uppercase;}/*--
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.6rem;}
+h3 {font-size: 1.4rem;}
+h4 {font-size: 1.2rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: .9rem; text-transform: uppercase;}/*--
 } for readability--*/
 p {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.45;
   margin-bottom: 1em;
 }
@@ -452,12 +452,8 @@ a:hover, a:active {
 .gentium {
   font-family: 'Gentium Book', serif;
 }
-.gentium.title {
-  font-size: 80%;
-  text-transform: lowercase;
-  font-style: italic;
-  vertical-align: middle;
-  font-weight: 400;
+.splash .gentium {
+  font-size: 1.8rem;
 }
 .work {
   font-family: 'Work Sans', sans-serif;
@@ -466,14 +462,11 @@ a:hover, a:active {
 .type {
   width: 92%;
   margin: 0 auto;
+  max-width: 70ch;
 }
 .wide-type {
   width: 94%;
   margin: 0 auto;
-}
-.wide-type .modal-head {
-  max-width: 68ch;
-  margin: auto;
 }
 .gallery {
   width: 87%;
@@ -506,22 +499,22 @@ figcaption {
 }
 /*--Layout Media Queries --*/
 @media screen and (min-width: 576px) {
-  html {font-size: 19px;}
+  html {font-size: 21px;}
   .type {width: 79%;}
   .wide-type {width: 89%;}
 }
 @media screen and (min-width: 768px) {
-  html {font-size: 20px;}
+  html {font-size: 22px;}
   .type {width: 69%;}
   .wide-type {width: 84%;}
 }
 @media screen and (min-width: 992px) {
-  html {font-size: 21px;}
+  html {font-size: 23px;}
   .type {width: 59%;}
   .wide-type {width: 79%;}
 }
 @media screen and (min-width: 1200px) {
-  html {font-size: 22px;}
+  html {font-size: 24px;}
   .type {width: 49%;}
   .wide-type {width: 74%;}
 }
@@ -535,7 +528,6 @@ figcaption {
 .lockup {
   margin: 1.5em auto .5em auto;
   text-align: center;
-  font-size: 105%;
 }
 .lockup h1 {
   color: var(--cerulean);
@@ -545,16 +537,7 @@ figcaption {
   line-height: 1;
   margin: 0 auto;
   padding: 0 2em;
-}
-.lockup h3 {
-  color: var(--cerulean);
-  font-family: 'work sans', sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: .1em;
+  font-size: 2.8rem;
 }
 .horiz {
   display: grid;
