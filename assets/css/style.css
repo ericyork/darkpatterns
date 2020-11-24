@@ -537,7 +537,7 @@ figcaption {
   line-height: 1;
   margin: 0 auto;
   padding: 0 2em;
-  font-size: 2.8rem;
+  font-size: 2.1rem;
 }
 .horiz {
   display: grid;
@@ -568,30 +568,38 @@ figcaption {
   background: var(--aqua);
   border-radius: 5px;
   margin: .5em auto 1em auto;
-  width: 90%;
+  width: 78%;
   padding: 9px .5em 5px .5em;
 }
 .reverse p {
   color: var(--offwhite);
   font-style: normal;
-  font-size: 80%;
+  font-size: .8rem;
 }
 @media screen and (min-width: 576px) {
   .lockup {font-size: 135%;}
-  .reverse p {font-size: 80%;}
+  .lockup h1 {font-size: 2.2rem;}
+  .reverse {width: 80%;}
+  .reverse p {font-size: .9rem;}
 }
 @media screen and (min-width: 768px) {
   .splash {padding-top:0;}
   .lockup {font-size: 150%;}
-  .reverse p {font-size: 80%;}
+  .lockup h1 {font-size: 2.3rem;}
+  .reverse {width: 82%;}
+  .reverse p {font-size: 1.0rem;}
 }
 @media screen and (min-width: 992px) {
   .lockup {font-size: 165%;}
-  .reverse p {font-size: 80%;}
+  .lockup h1 {font-size: 2.4rem;}
+  .reverse {width: 85%;}
+  .reverse p {font-size: 1.1rem;}
 }
 @media screen and (min-width: 1200px) {
   .lockup {font-size: 180%;}
-  .reverse p {font-size: 80%;}
+  .lockup h1 {font-size: 2.5rem;}
+  .reverse {width: 90%;}
+  .reverse p {font-size: 1.2rem;}
 }
 /*-- Sub-Page Nav Styles --*/
 .page-nav {
