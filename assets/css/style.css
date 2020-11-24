@@ -869,7 +869,7 @@ a:active #next, a:active #back  {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 1em;
-  background: var(--lapis);
+  background: rgba(37, 39, 77, 0.94);
   position: fixed;
   z-index: 1000;
   width: 100%;
