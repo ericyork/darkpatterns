@@ -166,10 +166,6 @@ a:hover, a:active {
   width: 94%;
   margin: 0 auto;
 }
-.gallery {
-  width: 87%;
-  margin: 0 auto;
-}
 figure {
   margin: 1em auto;
   padding: .5em;
@@ -189,13 +185,6 @@ figcaption {
   line-height: 1.25;
   font-family: 'Work Sans', sans-serif;
   color: var(--plum);
-}
-.filligree {
-  font-size: 133%;
-  text-align: center;
-}
-.pinwheel {
-  margin: 0 .66em;
 }
 /*-- Splash Section--*/
 .splash {
@@ -235,13 +224,6 @@ figcaption {
   font-style: italic;
   margin: 0 auto;
   padding: 0;
-}
-.gallery-sub {
-  font-family: 'Work Sans', sans-serif;
-  text-decoration: none;
-  color: var(--plum);
-  font-style: normal;
-  font-weight: 400;
 }
 .reverse {
   background: var(--aqua);
@@ -294,27 +276,6 @@ figcaption {
   border-bottom: 2px solid var(--cerulean);
 }
 /*-- Cases Pages Styles --*/
-.modal-content {
-   background-color: var(--brtwhite);
-   color: var(--lapis);
-   margin: 5% auto;
-   padding: 1.5em;
-   width: 90%;
-   border-radius: 4px;
-   animation: fadein .3s ease-in-out;
-}
-.modal-head h1 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: var(--cerulean);
-  margin-bottom: 0;
-}
-.modal-head p {
-  font-family: 'Work Sans', sans-serif;
-  color: var(--plum);
-  margin-bottom: 1em;
-}
 .entry-wrap {
   display: grid;
   grid-template-columns: 1fr;
