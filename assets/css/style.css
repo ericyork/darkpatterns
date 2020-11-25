@@ -665,7 +665,7 @@ footer {
   color: var(--plum);
   border-top: 1px solid var(--plum);
   background: var(--drklapis);
-  padding: 1.4rem 1rem 1rem 1rem;
+  padding: 1.4rem 1rem 0rem 1rem;
 }
 footer a:link, footer a:visited {
   color: var(--link);
@@ -690,6 +690,15 @@ footer .icon {
   width: auto;
   height: 1rem;
   vertical-align: text-top;
+}
+a:link svg#atom, a:link svg#github,
+a:visited svg#atom, a:visited svg#github {
+  transition: all .2s ease-in;
+  fill: var(--link);
+}
+a:hover svg#atom, a:hover svg#github,
+a:active svg#atom, a:active svg#github {
+  fill: var(--hover);
 }
 /*--Layout Media Queries --*/
 @media screen and (min-width: 576px) {
