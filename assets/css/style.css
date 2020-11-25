@@ -308,6 +308,8 @@ template {
 /*! Document Styles copyright 2018 Eric York https://github.com/ericyork/ */
 :root {
   /*--Colors--*/
+  --link: #B7D9E7;
+  --hover: #71BFE0;
   --drklapis: #111227;
   --lapis: #25274D;
   --aqua: #29648A;
@@ -345,6 +347,7 @@ body {
 }
 .type, .wide-type {
   position: relative;
+  padding-bottom: 2em;
 }
 .type p::selection, .wide-type p::selection {
   background: var(--plum);
@@ -440,14 +443,15 @@ hr {
   overflow-x: hidden;
 }
 a:link {
-  color: var(--cerulean);
+  color: var(--link);
   transition: var(--tr-std);
+  text-decoration: none;
 }
 a:visited {
-  color: var(--cerulean);
+  color: var(--link);
 }
 a:hover, a:active {
-  color: var(--plum);
+  color: var(--hover);
 }
 .gentium {
   font-family: 'Gentium Book', serif;
@@ -486,9 +490,11 @@ figure img {
   transform: translate(-50%,0%);
 }
 figcaption {
-  padding: .5em 0;
-  font-style: italic;
-  font-size: .95em;
+  padding: .5em 2rem;
+  font-size: .8em;
+  line-height: 1.25;
+  font-family: 'Work Sans', sans-serif;
+  color: var(--plum);
 }
 .filligree {
   font-size: 133%;
@@ -496,27 +502,6 @@ figcaption {
 }
 .pinwheel {
   margin: 0 .66em;
-}
-/*--Layout Media Queries --*/
-@media screen and (min-width: 576px) {
-  html {font-size: 21px;}
-  .type {width: 79%;}
-  .wide-type {width: 89%;}
-}
-@media screen and (min-width: 768px) {
-  html {font-size: 22px;}
-  .type {width: 69%;}
-  .wide-type {width: 84%;}
-}
-@media screen and (min-width: 992px) {
-  html {font-size: 23px;}
-  .type {width: 59%;}
-  .wide-type {width: 79%;}
-}
-@media screen and (min-width: 1200px) {
-  html {font-size: 24px;}
-  .type {width: 49%;}
-  .wide-type {width: 74%;}
 }
 /*-- Splash Section--*/
 .splash {
@@ -576,31 +561,6 @@ figcaption {
   font-style: normal;
   font-size: .8rem;
 }
-@media screen and (min-width: 576px) {
-  .lockup {font-size: 135%;}
-  .lockup h1 {font-size: 2.2rem;}
-  .reverse {width: 80%;}
-  .reverse p {font-size: .9rem;}
-}
-@media screen and (min-width: 768px) {
-  .splash {padding-top:0;}
-  .lockup {font-size: 150%;}
-  .lockup h1 {font-size: 2.3rem;}
-  .reverse {width: 82%;}
-  .reverse p {font-size: 1.0rem;}
-}
-@media screen and (min-width: 992px) {
-  .lockup {font-size: 165%;}
-  .lockup h1 {font-size: 2.4rem;}
-  .reverse {width: 85%;}
-  .reverse p {font-size: 1.1rem;}
-}
-@media screen and (min-width: 1200px) {
-  .lockup {font-size: 180%;}
-  .lockup h1 {font-size: 2.5rem;}
-  .reverse {width: 90%;}
-  .reverse p {font-size: 1.2rem;}
-}
 /*-- Sub-Page Nav Styles --*/
 .page-nav {
   display: flex;
@@ -619,103 +579,11 @@ figcaption {
 .page-nav a:hover, .page-nav a:active {
   color: var(--cerulean);
 }
-/*-- Gallery Styles --*/
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: .7em;
-}
-.card {
-  position: relative;
-  background: var(--drklapis);
-  border: 1.5px solid var(--plum);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: var(--tr-std);
-  opacity: .9;
-  padding: .5em;
-}
-.thumb {
-  padding-bottom: 56%;
-  background-size: cover;
-  background-position: center center;
-}
-.card-content {
-  padding-bottom: .7em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.card-title {
-  margin: .5em 0 0 0;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  align-self: flex-start;
-  color: var(--plum);
-  transition: var(--tr-std);
-}
-.card-text {
-  font-size: .80em;
-  line-height: 1.2;
-  align-self: flex-start;
-  color: var(--plum);
-  transition: var(--tr-std);
-}
-.card:hover {
-  border-color: var(--offwhite);
-  opacity: 1;
-}
-.card:hover .card-title, .card:hover .card-text {
-  color: var(--offwhite);
-}
-.card:hover .card-more {
-  border-color: var(--offwhite);
-  color: var(--offwhite);
-}
-button.card-more {
-  background: transparent;
-  padding: .4em .7em;
-  border-radius: 200px;
-  font-size: .75em;
-  text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
-  letter-spacing: -.75px;
-  cursor: pointer;
-  transition: var(--tr-std);
-}
-button.card-more, button.card-more:visited {
-  color: var(--plum);
-  border: 1.5px solid var(--plum);
-}
-.card:hover button.card-more:hover, .card:hover button.card-more:active {
-  color: var(--plum);
-  border-color: var(--plum);
-}
-@media screen and (min-width: 556px) {
-  .container {grid-template-columns: repeat(2, 1fr);}
-}
-@media screen and (min-width: 992px) {
-  .container {grid-template-columns: repeat(3, 1fr);}
-}
-/*-- Card Backgrounds --*/
-.thumb.camouflaging {background-image: url('../bin-img/camo2.png');}
-.thumb.misdirecting {background-image: url('../bin-img/misdirect1.png');}
-.thumb.discouraging {background-image: url('../bin-img/discourage1.png');}
-.thumb.disorienting {background-image: url('../bin-img/disorient1.png');}
-.thumb.shaming {background-image: url('../bin-img/shaming1.png');}
-.thumb.disguising {background-image: url('../bin-img/disguise1.png');} /*--
-} extra for radability--*/
-/*-- Modal Styles --*/
 .cases.page-nav {
   margin-bottom: 4em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 768px;){
-  .cases.page-nav {flex-wrap: nowrap;}
 }
 .cases.page-nav a {
   padding-bottom: .1em;
@@ -731,6 +599,7 @@ button.card-more, button.card-more:visited {
   color: var(--cerulean);
   border-bottom: 2px solid var(--cerulean);
 }
+/*-- Cases Pages Styles --*/
 .modal-content {
    background-color: var(--brtwhite);
    color: var(--lapis);
@@ -763,14 +632,6 @@ button.card-more, button.card-more:visited {
   grid-gap: 2em;
   justify-content: space-between;
 }
-@media screen and (min-width: 556px) {
-  .entry-wrap {grid-template-columns: 1fr;}
-  .entry-adjunct {grid-template-columns: 1fr;}
-}
-@media screen and (min-width: 768px) {
-  .entry-wrap {grid-template-columns: 7fr 5fr;}
-  .entry-adjunct {grid-template-columns: 1fr 1fr;}
-}
 .entry-wrap p:last-child {
   margin-bottom: 1em;
 }
@@ -798,45 +659,98 @@ button.card-more, button.card-more:visited {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-/*-- Pagination Nav Buttons --*/
-.pagination {
+/*-- Footer Styles --*/
+footer {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--plum);
+  border-top: 1px solid var(--plum);
+  background: var(--drklapis);
+  padding: 1.4rem 1rem 1rem 1rem;
+}
+footer a:link, footer a:visited {
+  color: var(--link);
+}
+footer a:hover, footer a:active {
+  color: var(--hover);
+}
+.foot-wrap {
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  margin: 2em 0 2em 0;
+  flex-direction: column;
 }
-.pagination a {
-  padding: .8em;
-  border: 1px solid var(--cerulean);
-  border-radius: 4px;
-  font-family: 'work sans', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1;
-  transition: var(--tr-std);
-  text-decoration: none;
+.foot-wrap p {
+  font-size: .85rem;
 }
-.pagination a:link, .pagination a:visited {
-  background: transparent;
-  color: var(--cerulean);
+.foot-symbol {
+  font-size: 1rem;
+  vertical-align: baseline;
 }
-.pagination a:hover, .pagination a:active {
-  border-color: var(--offwhite);
-  color: var(--offwhite);
+footer .icon {
+  width: auto;
+  height: 1rem;
+  vertical-align: text-top;
 }
-.icon {
-  width: 25px;
-  height: 16px;
-  vertical-align: top;
+/*--Layout Media Queries --*/
+@media screen and (min-width: 576px) {
+  html {font-size: 21px;}
+  .type {width: 79%;}
+  .wide-type {width: 89%;}
+  .foot-wrap {width: 89%;}
 }
-a:link #next, a:link #back,
-a:visited #next, a:visited #back {
-  transition: all .2s ease-in;
-  fill: var(--cerulean);
+@media screen and (min-width: 768px) {
+  html {font-size: 22px;}
+  .type {width: 69%;}
+  .wide-type {width: 84%;}
+  .foot-wrap {width: 84%; flex-direction: row;}
 }
-a:hover #next, a:hover #back,
-a:active #next, a:active #back  {
-  fill: var(--offwhite);
+@media screen and (min-width: 992px) {
+  html {font-size: 23px;}
+  .type {width: 59%;}
+  .wide-type {width: 79%;}
+  .foot-wrap {width: 79%;}
+}
+@media screen and (min-width: 1200px) {
+  html {font-size: 24px;}
+  .type {width: 49%;}
+  .wide-type {width: 74%;}
+  .foot-wrap {width: 74%;}
+}
+@media screen and (min-width: 576px) {
+  .lockup {font-size: 135%;}
+  .lockup h1 {font-size: 2.2rem;}
+  .reverse {width: 80%;}
+  .reverse p {font-size: .9rem;}
+}
+@media screen and (min-width: 768px) {
+  .splash {padding-top:0;}
+  .lockup {font-size: 150%;}
+  .lockup h1 {font-size: 2.3rem;}
+  .reverse {width: 82%;}
+  .reverse p {font-size: 1.0rem;}
+}
+@media screen and (min-width: 992px) {
+  .lockup {font-size: 165%;}
+  .lockup h1 {font-size: 2.4rem;}
+  .reverse {width: 85%;}
+  .reverse p {font-size: 1.1rem;}
+}
+@media screen and (min-width: 1200px) {
+  .lockup {font-size: 180%;}
+  .lockup h1 {font-size: 2.5rem;}
+  .reverse {width: 90%;}
+  .reverse p {font-size: 1.2rem;}
+}
+@media screen and (min-width: 768px;){
+  .cases.page-nav {flex-wrap: nowrap;}
+}
+@media screen and (min-width: 556px) {
+  .entry-wrap {grid-template-columns: 1fr;}
+  .entry-adjunct {grid-template-columns: 1fr;}
+}
+@media screen and (min-width: 768px) {
+  .entry-wrap {grid-template-columns: 7fr 5fr;}
+  .entry-adjunct {grid-template-columns: 1fr 1fr;}
 }
 /*-- Back-to-top Button --*/
 .to-top {
@@ -1042,22 +956,6 @@ p.drop {
 .dropcap.c {
     margin: 0 7px 0 0;
     line-height: .75;
-}
-/*-- Footer Styles --*/
-footer {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
-  color: var(--plum);
-  border-top: 1px solid var(--plum);
-  background: var(--drklapis);
-  text-align: center;
-  padding: 1.6em 1em 1.3em 1em;
-}
-footer a:link, footer a:visited {
-  color: var(--plum);
-}
-footer a:hover, footer a:active {
-  color: var(--offwhite);
 }
 /*-- Round Fish Styles --*/
 .sm-round {
