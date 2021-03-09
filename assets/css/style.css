@@ -632,11 +632,11 @@ p.drop {
   width: 73px;
   left: 10.5%;
   top: 38%;
-  animation: swim 4s 4;
+  animation: swim 4s 6;
 }
 .sm-round img {
   transform-origin: center center;
-  animation: school 4s 4;
+  animation: school 4s 6;
 }
 @keyframes swim {
   0% {transform: translateX(-125px); top: 38%;}
@@ -655,11 +655,11 @@ p.drop {
   width: 91px;
   left: 10.5%;
   top: 40%;
-  animation: swim2 4.5s 4;
+  animation: swim2 4.5s 6;
 }
 .lg-round img {
   transform-origin: center center;
-  animation: school2 4.5s 4;
+  animation: school2 4.5s 6;
 }
 @keyframes swim2 {
   0% {transform: translateX(110px); top: 39.5%;}
@@ -679,11 +679,11 @@ p.drop {
   width: 110px;
   right: 10.5%;
   top: 64%;
-  animation: swim3 4s 4;
+  animation: swim3 4s 6;
 }
 .sm-fish img {
   transform-origin: center center;
-  animation: school3 4s 4;
+  animation: school3 4s 6;
 }
 @keyframes swim3 {
   0% {transform: translateX(105px); top: 64%;}
@@ -702,11 +702,11 @@ p.drop {
   width: 91px;
   right: 10.5%;
   top:65%;
-  animation: swim4 4.5s 4;
+  animation: swim4 4.5s 6;
 }
 .xs-fish img {
   transform-origin: center center;
-  animation: school4 4.5s 4;
+  animation: school4 4.5s 6;
 }
 @keyframes swim4 {
   0% {transform: translateX(-110px); top: 65.5%;}
@@ -722,14 +722,14 @@ p.drop {
 }
 .angler {
   position: absolute;
-  widthh: 260px;
+  width: 260px;
   right: 4%;
   top: 95%;
-  animation: swim5 7s 4;
+  animation: swim5 7s 6;
 }
 .angler img {
   transform-origin: center center;
-  animation: school5 7s 4 ease-in-out;
+  animation: school5 7s 6 ease-in-out;
 }
 @keyframes swim5 {
   0% {transform: translateX(-50px); top: 95%;}
@@ -765,52 +765,52 @@ p.drop {
 /*-- left bubbles --*/
 .bubbles:nth-child(1) {
   left: 4%;
-  animation: rise1 24s 4 ease-in;
+  animation: rise1 24s 1 ease-in;
 }
 .bubbles:nth-child(2) {
   left: 5%;
-  animation: rise2 30s 4 ease-in;
+  animation: rise2 30s 1 ease-in;
 }
 .bubbles:nth-child(3) {
   left: 7%;
-  animation: rise3 28s 4 ease-in;
+  animation: rise3 28s 1 ease-in;
 }
 .bubbles:nth-child(4) {
   left: 7%;
-  animation: rise4 26s 4 ease-in;
+  animation: rise4 26s 1 ease-in;
 }
 .bubbles:nth-child(5) {
   left: 4%;
-  animation: rise1 24s 4 8s ease-in;
+  animation: rise1 24s 1 ease-in;
 }
 .bubbles:nth-child(6) {
   left: 7%;
-  animation: rise3 28s 4 8s ease-in;
+  animation: rise3 28s 1 ease-in6
 }
 .bubbles:nth-child(7) {
   left: 7%;
-  animation: rise4 26s 4 8s ease-in;
+  animation: rise4 26s 1 8s ease-in;
 }
 .bubbles:nth-child(1) svg g path {
-  animation: fade 24s 4 ease-in-out;
+  animation: fade 24s 1 ease-in-out;
 }
 .bubbles:nth-child(2) svg g path {
-  animation: fade 30s 4 ease-in-out;
+  animation: fade 30s 1 ease-in-out;
 }
 .bubbles:nth-child(3) svg g path {
-  animation: fade 28s 4 ease-in-out;
+  animation: fade 28s 1 ease-in-out;
 }
 .bubbles:nth-child(4) svg g path {
-  animation: fade 26s 4 ease-in-out;
+  animation: fade 26s 1 ease-in-out;
 }
 .bubbles:nth-child(5) svg g path {
-  animation: fade 24s 4 8s ease-in-out both;
+  animation: fade 24s 1 8s ease-in-out both;
 }
 .bubbles:nth-child(6) svg g path {
-  animation: fade 28s 4 8s ease-in-out both;
+  animation: fade 28s 1 8s ease-in-out both;
 }
 .bubbles:nth-child(7) svg g path {
-  animation: fade 26s 4 8s ease-in-out both;
+  animation: fade 26s 1 8s ease-in-out both;
 }
 @keyframes rise1 {
   0% {top: 96%;}
@@ -867,52 +867,52 @@ p.drop {
 /*-- Right bubbles --*/
 .bubbles-r:nth-child(1) {
   right: 4%;
-  animation: rise-r1 30s 4 ease-in;
+  animation: rise-r1 30s 1 ease-in;
 }
 .bubbles-r:nth-child(2) {
   right: 5%;
-  animation: rise-r2 36s 4 ease-in;
+  animation: rise-r2 36s 1 ease-in;
 }
 .bubbles-r:nth-child(3) {
   right: 7%;
-  animation: rise-r3 34s 4 ease-in;
+  animation: rise-r3 34s 1 ease-in;
 }
 .bubbles-r:nth-child(4) {
   right: 7%;
-  animation: rise-r4 32s 4 ease-in;
+  animation: rise-r4 32s 1 ease-in;
 }
 .bubbles-r:nth-child(5) {
   right: 4%;
-  animation: rise-r1 18s 4 4s ease-in;
+  animation: rise-r1 18s 1 ease-in;
 }
 .bubbles-r:nth-child(6) {
   right: 7%;
-  animation: rise-r3 22s 4 4s ease-in;
+  animation: rise-r3 22s 1 ease-in;
 }
 .bubbles-r:nth-child(7) {
   right: 7%;
-  animation: rise-r4 20s 4 4s ease-in;
+  animation: rise-r4 20s 1 ease-in;
 }
 .bubbles-r:nth-child(1) svg g path {
-  animation: fade 30s 4 ease-in-out;
+  animation: fade 30s 1 ease-in-out;
 }
 .bubbles-r:nth-child(2) svg g path {
-  animation: fade 36s 4 ease-in-out;
+  animation: fade 36s 1 ease-in-out;
 }
 .bubbles-r:nth-child(3) svg g path {
-  animation: fade 34s 4 ease-in-out;
+  animation: fade 34s 1 ease-in-out;
 }
 .bubbles-r:nth-child(4) svg g path {
-  animation: fade 32s 4 ease-in-out;
+  animation: fade 32s 1 ease-in-out;
 }
 .bubbles-r:nth-child(5) svg g path {
-  animation: fade 18s 4 4s ease-in-out both;
+  animation: fade 18s 1 ease-in-out both;
 }
 .bubbles-r:nth-child(6) svg g path {
-  animation: fade 22s 4 4s ease-in-out both;
+  animation: fade 22s 1 ease-in-out both;
 }
 .bubbles-r:nth-child(7) svg g path {
-  animation: fade 20s 4 4s ease-in-out both;
+  animation: fade 20s 1 ease-in-out both;
 }
 @keyframes rise-r1 {
   0% {top: 94%;}
