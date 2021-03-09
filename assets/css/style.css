@@ -636,7 +636,8 @@ p.drop {
 }
 .sm-round img {
   transform-origin: center center;
-  animation: school 4s 6;
+  opacity: 0;
+  animation: school 4s 6, fadeout 24s;
 }
 @keyframes swim {
   0% {transform: translateX(-125px); top: 38%;}
@@ -659,7 +660,8 @@ p.drop {
 }
 .lg-round img {
   transform-origin: center center;
-  animation: school2 4.5s 6;
+  opacity: 0;
+  animation: school2 4.5s 6, fadeout 27s;
 }
 @keyframes swim2 {
   0% {transform: translateX(110px); top: 39.5%;}
@@ -683,7 +685,8 @@ p.drop {
 }
 .sm-fish img {
   transform-origin: center center;
-  animation: school3 4s 6;
+  opacity: 0;
+  animation: school3 4s 6, fadeout 24s;
 }
 @keyframes swim3 {
   0% {transform: translateX(105px); top: 64%;}
@@ -706,7 +709,8 @@ p.drop {
 }
 .xs-fish img {
   transform-origin: center center;
-  animation: school4 4.5s 6;
+  opacity: 0;
+  animation: school4 4.5s 6, fadeout 27s;
 }
 @keyframes swim4 {
   0% {transform: translateX(-110px); top: 65.5%;}
@@ -729,7 +733,8 @@ p.drop {
 }
 .angler img {
   transform-origin: center center;
-  animation: school5 7s 6 ease-in-out;
+  opacity: 0;
+  animation: school5 7s 6 ease-in-out, fadeout 42s;
 }
 @keyframes swim5 {
   0% {transform: translateX(-50px); top: 95%;}
@@ -744,6 +749,11 @@ p.drop {
   50% {transform: rotateY(180deg);}
   99.9% {transform: rotateY(181deg);}
   100% {transform: rotateY(0deg);}
+}
+@keyframes fadeout {
+  0% {opacity: 1;}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
 }
 /*-- Bubble Styles --*/
 .bubbles {
