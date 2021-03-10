@@ -41,7 +41,6 @@ body {
 }
 .type, .wide-type {
   position: relative;
-  padding-bottom: 2em;
 }
 .type p::selection, .wide-type p::selection {
   background: var(--plum);
@@ -302,10 +301,15 @@ figcaption {
 }
 .main-tweet figcaption {
   border-bottom: 1px solid var(--offwhite);
-  margin-bottom: 1.25em;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  padding-right: 0;
 }
 .tweet-container figcaption {
   border-bottom: 1px solid var(--offwhite);
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  padding-right: 0;
 }
 .tweet-container figcaption:last-child {
   border-bottom: 1px solid transparent;
@@ -569,6 +573,7 @@ p.drop {
     float: left;
     font-size: 500%;
     color: var(--plum);
+    font-style: italic;
 }
 .dropcap.t {
     margin: 0 14px 0 0;
