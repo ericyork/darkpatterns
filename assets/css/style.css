@@ -136,7 +136,8 @@ hr {
   height: 1px;
   overflow-x: hidden;
 }
-a:link {
+a:link, [data-tippy-content] {
+  cursor: pointer;
   color: var(--link);
   transition: var(--tr-std);
   text-decoration: none;
@@ -144,7 +145,7 @@ a:link {
 a:visited {
   color: var(--link);
 }
-a:hover, a:active {
+a:hover, a:active, [data-tippy-content]:hover {
   color: var(--hover);
 }
 .gentium {
@@ -274,6 +275,26 @@ figcaption {
 .cases.page-nav a.active {
   color: var(--cerulean);
   border-bottom: 2px solid var(--cerulean);
+}
+/*-- Tippy Theme Styles --*/
+.tippy-box[data-theme~='dp-theme'] {
+  border: 3px solid var(--lapis);
+  font-size: .65rem;
+  background: var(--plum);
+  color: var(--drklapis);
+  font-family: 'Work Sans', sans-sans-serif;
+}
+.tippy-box[data-theme~='dp-theme'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--plum);
+}
+.tippy-box[data-theme~='dp-theme'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--plum);
+}
+.tippy-box[data-theme~='dp-theme'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--plum);
+}
+.tippy-box[data-theme~='dp-theme'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--plum);
 }
 /*-- Cases Pages Styles --*/
 .entry-wrap {
