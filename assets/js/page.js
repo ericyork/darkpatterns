@@ -33,11 +33,3 @@ function navToggle() {
     x.className = "topnav";
   }
 }
-
-tippy('[data-tippy-content]', {
-  allowHTML: true,
-  arrow: true,
-  theme: 'dp-theme',
-  trigger: 'click',
-  placement: 'auto-start'
-});
