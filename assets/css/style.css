@@ -27,6 +27,7 @@
 /*--Document--*/
 html {
   font-size: 20px;
+  background: var(--lapis);
 }
 body {
   font-family: 'Gentium Book Basic', serif;
