@@ -342,10 +342,13 @@ footer a:hover, footer a:active {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: column;
 }
 .foot-wrap p {
   font-size: .85rem;
+  line-height: 1;
+  margin: .5em 0 1.5em 0;
 }
 .foot-symbol {
   font-size: 1rem;
@@ -991,4 +994,9 @@ p.drop {
   10% {stroke: rgba(125,126,147,.9);}
   98% {stroke: rgba(125,126,147,.7);}
   100% {stroke: rgba(255,255,255,0);}
+}
+@media screen and (max-width: 768px) {
+  .sm-round, .lr-round, .sm-fish, .xs-fish, .angler, .bub-cont {
+    display: none;
+  }
 }
