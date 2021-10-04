@@ -27,7 +27,8 @@
 /*--Document--*/
 html {
   font-size: 20px;
-  background: var(--lapis);
+  background: var(--drklapis);
+  overflow-x: hidden;
 }
 body {
   font-family: 'Gentium Book Basic', serif;
@@ -65,7 +66,10 @@ h6 {font-size: .9rem; text-transform: uppercase;}/*--
 p {
   font-size: 1rem;
   line-height: 1.45;
-  margin-bottom: 1em;
+  margin-bottom: 1.45em;
+}
+section.type > p:last-of-type {
+  margin-bottom: 2em;
 }
 .text-list {
   list-style: disc;
@@ -82,7 +86,6 @@ p {
   padding-bottom: .5em;
 }
 .epigraph {
-  /*background-color: var(--lapis); in for testing contrast*/
   color: var(--plum);
   font-style: italic;
   border-top: 1px dashed var(--plum);
@@ -594,7 +597,7 @@ p.drop {
     line-height: .75;
 }
 .dropcap.d {
-    margin: 0 7px 0 0;
+    margin: 0 12px 0 0;
     line-height: .75;
 }
 .dropcap.a {
@@ -602,7 +605,7 @@ p.drop {
     line-height: .75;
 }
 .dropcap.w {
-    margin: 0 7px 0 0;
+    margin: 0 9px 0 0;
     line-height: .75;
 }
 .dropcap.v {
@@ -610,7 +613,7 @@ p.drop {
     line-height: .75;
 }
 .dropcap.s {
-    margin: 0 7px 0 0;
+    margin: 0 12px 0 0;
     line-height: .75;
 }
 .dropcap.f {
