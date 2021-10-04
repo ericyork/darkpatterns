@@ -242,6 +242,9 @@ figcaption {
   font-style: normal;
   font-size: .8rem;
 }
+ol {
+  line-height: 1.5;
+}
 /*-- Sub-Page Nav Styles --*/
 .page-nav {
   display: flex;
