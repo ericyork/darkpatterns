@@ -587,7 +587,7 @@ p.drop {
     font-style: italic;
 }
 .dropcap.t {
-    margin: 0 14px 0 0;
+    margin: 0 12px 0 0;
     line-height: .78;
 }
 .dropcap.u {
@@ -640,6 +640,10 @@ p.drop {
 }
 .dropcap.c {
     margin: 0 7px 0 0;
+    line-height: .75;
+}
+.dropcap.p {
+    margin: 0 12px 0 0;
     line-height: .75;
 }
 /*-- Round Fish Styles --*/
