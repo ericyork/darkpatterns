@@ -16,9 +16,10 @@
 				<path class="eye" d="M12.92 12a1.487 1.487 0 0 0-.207.762c0 .797.617 1.443 1.378 1.443.76 0 1.378-.646 1.378-1.443 0-.21-.043-.408-.119-.587 1.213.287 1.65.858 1.65 1.372C17 14.27 16.16 15 13.461 15 10.763 15 10 14.28 10 13.547c0-.68.68-1.442 2.92-1.547z" fill="#FFF"/></g>
 				</svg>
 			</a>
-			<a href="context.html" title="Context">Context</a>
-			<a href="graphics.html" title="Graphics">Graphics</a>
-			<a href="cases/disguise.html" title="Cases">Patterns</a>
+			<a href="context.html" title="Contexts">Contexts</a>
+			<a href="cunning.html" title="Cunning">Cunning</a>
+			<a href="illusion.html" title="Illusion">Illusions</a>
+			<a href="cases/disguise.html" title="Patterns">Patterns</a>
 			<a href="coda.html" title="Coda">Coda</a>
 			<a href="meta.html" title="Meta" class="active">&lt;&#47;&gt;</a>
 			<a href="javascript:void(0);" class="trigram" onclick="navToggle()">&#9776;</a>
@@ -46,25 +47,25 @@
 				<h1>Specifications</h1>
 				<p><span class="dropcap t">T</span>he goal was to build a lightweight site that delivered a consistent experience across devices. Considering longform prose would be the primary content type, effective typography was a must, along with contextual navigation to help readers traverse lengthy columns. Additionally, a gallery was needed for visual examples, and I wanted to build in modest experience enhancements using browser-native animation tools.</p>
 				<p>Accordingly, the site was prototyped in the Sketch app and hand-coded in HTML5 and CSS3 (using <code>flex</code> and <code>grid</code> for brevity and clarity) with responsive breakpoints set via <code>@media</code> and animations handled via <code>@keyframes</code>. Some JS was used for the main menu toggle and the top-of-page button.</p>
-				<p>Eventually, jQuery was implemented for smooth scrolling and modal gallery effects (and to better suport older browsers).</p>
+				<p>Eventually, jQuery was implemented for smooth scrolling and modal gallery effects (which were eventually removed), and to better suport older browsers, which is actually needed less and less as time goes on. Were I starting this project today, I'd definitely eschew jQuery.</p>
 				<p>Images (except photos) and icons were hand-drawn and inlined as .svg for superior performance and to leverage CSS animation. Many images where avoided altogether by using HTML entities such as &#8679; and &#9776;.</p>
 				<div class="stats">
 					<h4>Dev Specs</h4>
 					<div class="stat-row">
 						<span class="crit">Total Weight:</span>
-						<span class="value">128kb min+gzip</span>
+						<span class="value">000kb min+gzip</span>
 					</div>
 					<div class="stat-row">
 						<span class="crit">Avg. Page:</span>
-						<span class="value">128kb</span>
+						<span class="value">000kb</span>
 					</div>
 					<div class="stat-row">
 						<span class="crit">Page Speed:</span>
-						<span class="value">~300 to 500ms</span>
+						<span class="value">~00 to 00ms</span>
 					</div>
 					<div class="stat-row">
 						<span class="crit">Lines of Code:</span>
-						<span class="value">>10,000 lns</span>
+						<span class="value">>0,000 lns</span>
 					</div>
 				</div>
 			</div>
@@ -72,36 +73,36 @@
 				<h1>Notes</h1>
 				<p><span class="dropcap t">T</span>his project was developed in a highly iterative fashion, going back and forth from manuscript to prototype as the ideas developed. This messy process was entirely necessary because there was no way to know what it should look like until it was written, but at the same time, to know how to write it, I needed to know how it would eventually look.</p>
 				<p>The practical result of this is that it took a long, time time. The original scaffolds of the site date back several years, and it originally looked very different than it does now. I originally wanted to use git to keep track of every version of the site, but over time as I moved and renamed code repositories, some things eventually got lost.</p>
-				<p>All the commits to this project can be viewed on the <a href="http://github.com/ericyork">Github repo</a> page.</p>
+				<p>All the commits to this project can be viewed on the <a href="https://github.com/ericyork/darkpatterns">Github repo</a> page.</p>
 			</div>
 			<div class="section" id="typography">
 				<h1>Typography</h1>
-				<p><span class="dropcap t">T</span>he type is set in a combination of Gentium Book Basic at 400 and 700 weights, for body text and body headings, and Work Sans, at 400 and 900 weights, for navigation text and page titles. The body font size scales by screen size, but on desktop widths it's 18px tall with a line-height of 1.15, for a total height of 21px per line.</p>
-				<p>A variety of techniques were eventually included to help break up the lengthy text columns into more managable chunks. These include inter-page navigation (the Back and Next Links), as well as in-page navigation (to various sections and back to the top). These also include the use of section headings, drop caps, and interstitial characters, i.e. &#10050; &#10050; &#10050;.</p>
-				<p>The body text has a color code of <code>#D1D1D1</code> and the background, at its lightest point, has a value of <code>#25274D</code> which yields a contrast ratio of 9.32 that easily surpasses WCAG AAA compliance at the smallest sizes. Page headings and body subheadings also pass AAA compliance (4.56 and 3.58, respectively). The smallest sizes headings with the least contrast (<code>#7D7E93</code> at 18px), passes AA compliance with a contrast ratio is a bit low, but still acceptable and fits the muted tone.</p>
+				<p><span class="dropcap t">T</span>he type is set in a combination of Gentium Book Basic at 400 and 700 weights, for body text and body headings, and Work Sans, at 400 and 900 weights, for navigation text and page titles. The body font size scales by screen size, but on desktop widths it's 24px tall with a line-height of 1.4 (so about 34px total), and paragraphs have a bottom margin of about 29px.</p>
+				<p>A variety of techniques were eventually included to help break up the lengthy text columns into more managable chunks. The manuscript originally included inter-page navigation (back and next Links on each page), as well as in-page navigation (to various sections and back to the top). I also used section headings and drop caps, and experimented with interstitial characters (but eventially removed them as they created needless visual clutter).</p>
+				<p>The body text has a color code of <code>#D1D1D1</code> and the background, at its lightest point, has a value of <code>#25274D</code> which yields a contrast ratio of 12.07, which surpasses WCAG AAA compliance at the smallest sizes. Page headings and body subheadings also pass AAA compliance (4.63 and 5.09, respectively). It would have been easy enough to bump up the contrast significantly, but I was aiming for accessible colors <em>and</em> a muted visual tone. Many thanks to the reviewers who prevented <em>too</em> muted a tone :)</p>
 			</div>
 			<div class="section" id="technology">
 				<h1>Other Technologies</h1>
 				<p>A variety of technologies were used in the creation of this project, and I've breifly touched on the major ones below.</p>
 				<h2>Twitter Embeds</h2>
-				<p>The decision to embed individual tweets was a tradeoff that came with significant costs, and which I still regret at times. I still found myself I should take them out even until the end of the project. Below are the primary issues:</p>
-				<p><strong>Twitter Tracking</strong>: Embeded tweets contain tracking scripts that send data to Twitter, and as a result, they are subject to content blocking on devices. In other words, some user's will block the tweets from rendering by default. For this reason, I disabled all tracking on all pages, which should resolve the issue. However, if you can't view the embedded tweets, check your browser's or adblocker's security settings.</p>
+				<p>The decision to embed individual tweets was a tradeoff that came with significant costs, and which I still regret at times. I found myself wondering whether I should take them out up until the end of the project. Below are the primary issues:</p>
+				<p><strong>Twitter Tracking</strong>: Embeded tweets contain tracking scripts that send data to Twitter, and as a result, they are subject to content blocking on devices. In other words, some user's will block the tweets from rendering by default. For this reason, <strong>I disabled Twitter's tracking on all pages</strong>, which should resolve the issue. However, if you can't view the embedded tweets, check your browser's or adblocker's security settings.</p>
 				<p><strong>Custom Styles</strong>: By detault, tweet styles are quite limited and because of how they are implemented in browsers, a lot of the CSS can't be touched in the stylesheet and needs to accessed by javascript factory functions. I implimented the dark theme and restricted some sizing properties, but mostly left the tweets with their default styling because rewriting them all would require additional javascript on every page.</p>
-				<p><strong>Benefits</strong>: The embedded tweets did save a lot of time. Rather than having to manually import (i.e. type in) all the text, links, and media posted in the tweets, I could simply generate embed code and, with some optimizations, paste it in. That said, because of the costs above, I'm still not sure if it was worth it not.</p>
+				<p><strong>Benefits</strong>: The embedded tweets did probably save some time. Maybe. Rather than having to manually type in all the data, I could simply generate embed code and, with some optimizations, paste it in. I did spend a lot of time trying to style them, disable ad tracking, embed them properly, and so on, so I'm not really sure how much time it actually saved.</p>
 				</ul>
 				<h2>Tech Stack</h2>
 				<p>Other than the use of jQuery for the nav menu and the modals, all the code was written by hand without any code generators or CSS frameworks. I do apply the mini-resent.css and the normalize.css stylesheets, both distributed under an MIT license, as a foundation for my code, but these merely reset and normalize regular values, respectively. All the design and layout elements are my own.</p>
 				<p>I used the Sketch app for prototyping and for authoring the scaled vector (.svg) images used in animations and as design elements.</p>
-				<p>I used the Atom text editor both for coding and for authoring the manuscript, although some manuscript authoring was eventually comleted using Mac's Pages app. My Atom editor has a number of addons, including a smart-quotes replacement tool which I replied upon heavily to convert straight quotes to smart quotes in the manuscript body.</p>
+				<p>I used the Atom text editor both for coding and for authoring the manuscript, although some manuscript authoring was eventually comleted using Mac's Pages app and Miscrosoft Word.</p>
 				<p>I used github and the github client to stage and commit all coding changes. Sometimes I used the github desktop client, but more often, I just used the command line. Sometimes I made notes in markdown, which converts easily to HTML, but mostly I made them in .txt files and converted them to HTML by hand.</p>
 				<h2>Icons and Graphics</h2>
 				<p>Many hand-drawn images that appear here were based on open-source line drawings posted to the Noun Project, a wonderful resource. Typically, I'd find a few examples of what I wanted and then create my own graphics from those, but sometimes I incorporated elements of the original artwork and I've credited those below.</p>
-				<p>Other, more involved graphics were adapted from among the many examples presented in Arnheim's text. These images were entire recreated using svg and Adobe Illustrator's iPad app, along with the Apple Pencil.</p>
+				<p>Other, more involved graphics such as those which appear  were adapted from among the many examples presented in Arnheim's text. These images were entire recreated using svg and Adobe Illustrator's iPad app, along with the Apple Pencil.</p>
 				<p>All .svgs were edited in both Sketch and Atom. Some are referenced in the file, but most are inlined directly into the html for superior performance and utility.</p>
 			</div>
 			<div class="section" id="credits">
 				<h1>Credits</h1>
-				<p><span class="dropcap t">T</span>The following artists from the Noun Project authored images that inspiried either directly or indirectly the work I adapted from them. While each of the icons I drew is my own, it owes a debt to these artists, so I'm acknowleding this here.<br />
+				<p><span class="dropcap t">T</span>The following artists from the Noun Project authored images that inspired either directly or indirectly the work I adapted from them. While each of the icons I drew is my own, it owes a debt to these artists, so I'm acknowleding this here.<br />
 				<ul class="text-list">
 					<li>“Octopus” by Yuliya Po. The icon for the site uses Po's outer shape. The eye inside, as well as other aspects of implimentation, are my own.</li>
 					<li>“Bubbles” by Alex Vaughn. Vaughn's bubble collection served as a template for my own bubble drawings.</li>
@@ -245,7 +246,7 @@
 						</svg>
 					</a>
 				</p>
-				<p>View on 
+				<p>View on
 					<a target="_blank" href="https://github.com/ericyork/darkpatterns">
 						<svg viewBox="0 0 128 128" class="icon" id="github">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
