@@ -65,8 +65,8 @@ h6 {font-size: .9rem; text-transform: uppercase;}/*--
 } for readability--*/
 p {
   font-size: 1rem;
-  line-height: 1.45;
-  margin-bottom: 1.45em;
+  line-height: 1.4;
+  margin-bottom: 1.2em;
 }
 section.type > p:last-of-type {
   margin-bottom: 2em;
@@ -180,9 +180,13 @@ figure {
   transform: translateX(-12%);
 }
 figure img {
+  margin-top: .5em;
   position: relative;
   left: 50%;
   transform: translate(-50%,0%);
+}
+figure img.shifted {
+  left: 50%;
 }
 figcaption {
   padding: .5em 2rem;
